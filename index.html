@@ -19,6 +19,22 @@
             box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
         }
 
+   .hero-section {
+    height: 900px;
+    overflow: hidden;
+  }
+
+  .hero-section img {
+    object-fit: cover;
+    height: 100%;
+    
+    filter: brightness(60%);
+  }
+
+  .hero-section .overlay {
+    color: white;
+    z-index: 2;
+  }
 
 
      </style>
@@ -47,7 +63,38 @@
     
     </nav>
 
-    
+    <!-- <div> dene bunu </div> -->
+
+    <!--                                 büyük resim                           -->
+    <div class="container-fluid p-0">
+  <div class="hero-section position-relative text-white text-center">
+    <img src="assets/huseyin foto.jpg" class="img-fluid w-100" alt="Ürün Resmi">
+    <div class="overlay position-absolute top-50 start-50 translate-middle">
+      <h1 class="display-4 fw-bold">Yeni Sezon Başladı!</h1>
+      <p class="lead">En beğenilen ürünleri kaçırma. Hemen keşfet!</p>
+      <a href="#products" class="btn btn-light mt-3">Ürünleri Gör</a>
+    </div>
+  </div>
+</div>
+    <script>
+  const searchInput = document.getElementById("searchInput");
+  const campaignCards = document.querySelectorAll(".campaign-card");
+
+  searchInput.addEventListener("input", function () {
+    const query = this.value.toLowerCase();
+
+    campaignCards.forEach(card => {
+      const title = card.querySelector(".card-title").textContent.toLowerCase();
+      const description = card.querySelector(".card-text").textContent.toLowerCase();
+
+      if (title.includes(query) || description.includes(query)) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  });
+   </script>
     
     
     <section class="bg-light mt-5">
@@ -60,8 +107,8 @@
 
                         <div class="position-relative">
                             <img src="assets/l_20231-s3ae72z8-ksy-102-88-96-190_a.webp"
-                            class="card-img-top rounded-top-3 img-fluid"
-                            style="object-fit: cover;">
+     class="card-img-top rounded-top-3 img-fluid"
+     style="object-fit: cover;"/>
                             <span class="position-absolute top-0 end-0 m-2 badge bg-light text-dark rounded-pill px-3 py-2 shadow-sm">
                                 <i class="fa-solid fa-palette me-1 text-primary"></i>3 Renk
                             </span>
@@ -110,7 +157,7 @@
 
                         <div class="position-relative">
                             <img src="assets/l_20251-s55715z8-rw0-95-76-90-185_a.webp" class="card-img-top rounded-top-3 img-fluid"
-                            style="object-fit: cover;">
+                            style="object-fit: cover;"/>
                             <span class="position-absolute top-0 end-0 m-2 badge bg-light text-dark rounded-pill px-3 py-2 shadow-sm">
                                 <i class="fa-solid fa-palette me-1 text-primary"></i>7 Renk
                             </span>
