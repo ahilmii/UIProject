@@ -35,7 +35,7 @@
             
              <ul>
                 <label class="button cancel" for="check"><i class="fas fa-times"></i></label>
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="#">Products</a></li>  
                 <li><a href="#">About</a></li>
                 <li><a href="#">Feedback</a></li>
@@ -60,8 +60,8 @@
 
                         <div class="position-relative">
                             <img src="assets/l_20231-s3ae72z8-ksy-102-88-96-190_a.webp"
-     class="card-img-top rounded-top-3 img-fluid"
-     style="object-fit: cover;">
+                            class="card-img-top rounded-top-3 img-fluid"
+                            style="object-fit: cover;">
                             <span class="position-absolute top-0 end-0 m-2 badge bg-light text-dark rounded-pill px-3 py-2 shadow-sm">
                                 <i class="fa-solid fa-palette me-1 text-primary"></i>3 Renk
                             </span>
@@ -91,7 +91,7 @@
                                     <span class="display-6 text-primary fw-bold">1.399,99 TL</span>
                                 </div>
 
-                                <button onclick="redirectToRegister()" class="btn btn-primary w-100 mt-auto">
+                                <button class="sepeteEkle btn btn-primary w-100 mt-auto ">
                                     <i class="fa-solid fa-cart-shopping me-2"></i>Sepete Ekle
                                 </button> 
 
@@ -140,7 +140,7 @@
                                     <span class="display-6 text-primary fw-bold">999,99 TL</span>
                                 </div>
 
-                                <button class="btn btn-primary w-100 mt-auto">
+                                <button class="sepeteEkle btn btn-primary w-100 mt-auto">
                                     <i class="fa-solid fa-cart-shopping me-2"></i>Sepete Ekle
                                 </button> 
 
@@ -190,7 +190,7 @@
                                     <span class="display-6 text-primary fw-bold">1499,99 TL</span>
                                 </div>
 
-                                <button class="btn btn-primary w-100 mt-auto">
+                                <button class="sepeteEkle btn btn-primary w-100 mt-auto">
                                     <i class="fa-solid fa-cart-shopping me-2"></i>Sepete Ekle
                                 </button> 
 
@@ -239,7 +239,7 @@
                                     <span class="display-6 text-primary fw-bold">1499,99 TL</span>
                                 </div>
 
-                                <button class="btn btn-primary w-100 mt-auto">
+                                <button class="sepeteEkle btn btn-primary w-100 mt-auto">
                                     <i class="fa-solid fa-cart-shopping me-2"></i>Sepete Ekle
                                 </button> 
 
@@ -263,9 +263,24 @@
 
 <script>
 
-    function redirectToRegister() {
 
-    }
+    // NOT : addEventListener → bir tek öğeye uygulanabilir. Bu yüzden forEAch kullandık.
+
+    document.querySelectorAll(".sepeteEkle").forEach( function(button) { // bu satırdaki function "sepeteEkle" sınfına ait bütün butonları sırayla gezer.
+            button.addEventListener("click", function () {              // bu butona tıklanınca çalışacan fonksiyon.
+                let girisYaptiMi = localStorage.getItem("giris");
+
+                if (girisYaptiMi === "true") { //  localStorage her zaman string döndürür.
+                // kullanıcı giriş yapmış
+                 alert("Sepete eklendi!");
+                } else {
+
+                    window.location.href = "register.html";
+                }
+            })
+        }
+
+    )
 
 
 </script>
