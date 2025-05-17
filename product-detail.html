@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="indexStyle.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <title>KOD ADI GONYALI HİLMİ</title>
+    
+    <style>
+        /* Hover efekti için geçiş animasyonu */
+        .transition-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .transition-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+        }
+
+        .hero-section {
+            height: 900px;
+            overflow: hidden;
+        }
+
+        .hero-section img {
+            object-fit: cover;
+            height: 100%;
+            
+            filter: brightness(60%);
+        }
+
+        .hero-section .overlay {
+            color: white;
+            z-index: 2;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    
+    <nav>
+        
+        <div class="menu">
+            <input type="checkbox" id="check">
+            <div class="logo"> <a href="index.html">Style Of Turkish Men </br></a></div>
+            
+             <ul>
+                <label class="button cancel" for="check"><i class="fas fa-times"></i></label>
+                <li><a href="index.html">Home</a></li>
+                
+                <li class="product">
+                    <a href="product.html">Products</a>
+                    
+                    <div class="Product_menu">
+                        <div class="Product-drowdown_menu">
+                            <strong>Clothing</strong>   
+                            <a href="#">T-shirts</a>
+                            <a href="#">Trousers</a>
+                            <a href="#">Jackets</a>
+                        </div>
+
+                        <div class="Product-drowdown_menu">
+                            <strong>Underwear</strong>
+                            <a href="#">Tank  </a>
+                            <a href="#">Boxers</a>
+                            <a href="#">Socks</a>
+                        </div>
+
+                        <div class="Product-drowdown_menu">
+                            <strong>Shoes</strong>
+                            <a href="#">Sneakers</a>
+                            <a href="#">Formal</a>
+                            <a href="#">Slippers</a>
+                        </div>
+                    </div>
+                </li>  
+
+                <li><a href="#">About</a></li>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+
+            <label class="button bars" for="check"><i class="fas fa-bars"></i></label>
+        </div>
+    
+    </nav>
+
+    <section class="bg-light mt-5">
+
+        
+
+        <div id="prdouct-detail" class="container-lg mt-5">
+
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 row-cols-lg-3 my-5 align-items-center justify-content-center g-3">
+                <!-- kartlar bu div'in içine yerleştirilecek (js ile) -->
+
+
+                <!-- 1. foto -->
+                <div class="col-12 col-lg-4 col-xl-4"> 
+                    <div class="card border-0 shadow-sm rounded-3 h-100 transition-card">
+                        <div class="position-relative">
+                            <img src="assets/bej-cizgili-desen-gofreli-ceket-1.webp" class="card-img-top rounded-top-3 img-fluid"
+                            style="object-fit: cover;">
+                        </div>
+                    </div>    
+                </div>    
+
+                <!-- 2. foto -->
+                <div class="col-12 col-lg-4 col-xl-4"> 
+                    <div class="card border-0 shadow-sm rounded-3 h-100 transition-card">
+                        <div class="position-relative">
+                            <img src="assets/bej-cizgili-desen-gofreli-ceket-2.webp" class="card-img-top rounded-top-3 img-fluid"
+                            style="object-fit: cover;">
+                        </div>
+                    </div>    
+                </div>    
+
+
+                <!-- info-->
+                <div class="col-12 col-lg-4 col-xl-4"> 
+                    <div class="card border-0 shadow-sm rounded-3 h-100 transition-card">
+
+                        <div class="card-body d-flex flex-column">
+                            
+                            <h5 class="card-title fw-bold text-dark mb-1">İMZA</h5>
+                            <p class="card-text text-muted mb-3">Bej Çizgili Desen Gofreli Mono Yaka Esnek Slim Fit Ceket</p>
+                            
+                            <div class="d-flex align-items-center mb-1">
+                                <div class="me-2">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <small class="text-muted">(4)</small>
+
+                                    <span class="card-text text-muted mb-3"> <span>|</span> <a href="" style="color: #6c757d; text-decoration: underline;">Ürünü Değerlendir</a> </span>
+                                    <!-- ürünü değerlendir tıklandığında en aşağıdaki değerlendirmeler kısmına yönlendirmeli -->
+                                    <div class="card-text text-muted mb-3">Satıcı : <span style="color:#428bca;">HEAL ME</span> (İade Süresi: 1 Gün)</div>
+
+                                </div>
+                            </div>    
+
+                            
+                            <div class="mt-auto">
+
+                                <hr style="width:100%; margin: 5px;">
+                                <div class="d-flex align-items-center">
+                                    <span class="display-6 text-primary fw-bold">1499,99 TL</span>
+                                </div>
+                                <hr style="width:100%; margin: 5px;">
+
+                                <p class="card-text text-muted mb-3" style="text-align: left; background-color: #fdf7ee; padding: 10px 15px; margin-top: 8px;"><span><i class="fa-solid fa-tape"></i></span> Tişort uzunluğu omuz hizasından ölçülür</p>
+                                <button class="sepeteEkle btn btn-primary w-100 mt-auto">
+                                    <i class="fa-solid fa-cart-shopping me-2"></i>Sepete Ekle
+                                </button> 
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>    
+                </div>    
+
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+<footer>
+  <div class="iletisim-bilgileri">
+    <h3>Style Of Turkish Men</h3>
+    <p>Adress:54 Sakarya University, Serdivan City, SAU 54000, TR</p>
+    <p>Phone: 0 (551) 018 73 27</p>
+  </div>
+  <div class="sosyal-medya">
+    <a href="#"><i class="fa-brands fa-facebook fa-beat"  style="font-size:20px;"></i></a>
+    <a href="#"><i class="fa-brands fa-twitter fa-beat"   style="font-size:20px;"></i></a>
+    <a href="https://www.instagram.com/hsynyyllmz/" target="_blank"><i class="fa-brands fa-instagram fa-beat" style="font-size:20px;"></i></a>
+  </div>
+  <div class="copyright">
+    <p>© 2023 All Rights Reserved - Style Of Turkish Men</p>
+  </div>
+</footer>
+
+
+    <!-- bu alertBox kısmı sayfanın en altında durmalı "</abody>" den hemen önce -->
+   <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Giriş Gerekli</h5>
+                </div>
+                
+                <div class="modal-body">
+                    Devam edebilmek için önce giriş yapmanız gerekiyor.
+                </div>
+                
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="modalRedirectBtn" data-bs-dismiss="modal">Tamam</button>
+                </div>
+
+            </div>
+
+        </div>
+   </div>
+
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<script src="script.js"></script>
+
+
+<!-- 
+<script>
+
+    const queryString = window.location.search; // Get the query string, e.g., '?name=kurklu-erkek-oduncu-gomlek'
+    const queryParams = new URLSearchParams(queryString); // Parse the query string into an object
+
+    // access the value of the query parameters
+    const nameOfURL = queryParams.get('name');
+
+
+    const products = [
+        {
+            name: "erkek-blazer-ceket",
+            title: "Dar Kalıp Erkek Blazer Ceket Ceket Ceket Ceket",
+            brand: "LC Waikiki",
+            price: "1.399,99 TL",
+            image: "assets/erkek-blazer-ceket-1.webp"
+        },
+
+        {
+            name: "poliviskon-cepli-erkek-gomlek-ceket",
+            title: "Regular Fit Poliviskon Cepli Erkek Gömlek Ceket",
+            brand: "LC Visionr",
+            price: "999,99 TL",
+            image: "assets/poliviskon-cepli-erkek-gomlek-ceket-1.webp"
+        },
+
+        {
+            name: "uzun-kollu-erkek-ceket-gomlek",
+            title: "Regular Fit Uzun Kollu Erkek Gömlek Ceket",
+            brand: "SOUTHBLUE",
+            price: "1499,99 TL",
+            image: "assets/uzun-kollu-erkek-ceket-gomlek-1.webp"
+        },
+
+        {
+            name: "bej-cizgili-desen-gofreli-ceket",
+            title : "Bej Çizgili Desen Gofreli Mono Yaka Esnek Slim Fit Ceket",
+            brand: "İMZA",
+            price: "6999,99 TL",
+            image: "assets/bej-cizgili-desen-gofreli-ceket-1.webp"
+        },
+
+    ];
+
+    const product = products.find(p => p.name === nameOfURL);    
+
+    if (product) {
+
+        const container = document.getElementById("prdouct-detail");
+
+        container.innerHTML = `
+        <div class="card border-0 shadow-sm rounded-3 p-4">
+                <img src="${product.image}" class="img-fluid mb-3" style="max-height: 400px; object-fit: cover;">
+                <h2 class="fw-bold">${product.title}</h2>
+                <p class="text-muted">${product.brand}</p>
+                <h3 class="text-primary fw-bold">${product.price}</h3>
+                <button class="btn btn-primary mt-3">Sepete Ekle</button>
+            </div>
+        `;
+
+
+
+    } else {
+        document.getElementById("product-detail").innerHTML = `
+            <p class="text-danger">Ürün bulunamadı.</p>
+        `;
+    }
+    
+
+
+
+</script> -->
+
+
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</html>    

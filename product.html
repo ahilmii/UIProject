@@ -19,6 +19,10 @@
             box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
         }
 
+        a {
+           text-decoration: none; 
+        }
+
 
 
      </style>
@@ -36,7 +40,34 @@
              <ul>
                 <label class="button cancel" for="check"><i class="fas fa-times"></i></label>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="product.html">Products</a></li>  
+                
+                <li class="product">
+                    <a href="product.html">Products</a>
+                    
+                    <div class="Product_menu">
+                        <div class="Product-drowdown_menu">
+                            <strong>Clothing</strong>   
+                            <a href="#">T-shirts</a>
+                            <a href="#">Trousers</a>
+                            <a href="#">Jackets</a>
+                        </div>
+
+                        <div class="Product-drowdown_menu">
+                            <strong>Underwear</strong>
+                            <a href="#">Tank  </a>
+                            <a href="#">Boxers</a>
+                            <a href="#">Socks</a>
+                        </div>
+
+                        <div class="Product-drowdown_menu">
+                            <strong>Shoes</strong>
+                            <a href="#">Sneakers</a>
+                            <a href="#">Formal</a>
+                            <a href="#">Slippers</a>
+                        </div>
+                    </div>
+                </li>  
+
                 <li><a href="#">About</a></li>
                 <li><a href="#">Feedback</a></li>
                 <li><a href="register.html">Register</a></li>
@@ -51,16 +82,16 @@
    
 
      <section class="bg-light mt-5">
-        <div></div>
         <div class="container-lg ">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 my-5 align-items-center justify-content-center g-3">
 
                 <!-- 1. Ürün kartı  -->
                 <div class="col-6 col-lg-4 col-xl-3 d-flex"> 
+                    <a href="product-detail.html?name=erkek-blazer-ceket" class="card-link">
                     <div class="card border-0 shadow-sm rounded-3 h-100 transition-card flex-fill">
 
                         <div class="position-relative">
-                            <img src="assets/l_20231-s3ae72z8-ksy-102-88-96-190_a.webp"
+                            <img src="assets/erkek-blazer-ceket-1.webp"
                               class="card-img-top rounded-top-3 img-fluid"
                              style="object-fit: cover;"/>
                             <span class="position-absolute top-0 end-0 m-2 badge bg-light text-dark rounded-pill px-3 py-2 shadow-sm">
@@ -102,15 +133,17 @@
                         </div>
 
                     </div>
+                    </a>
 
                 </div>
 
                 <!-- 2. Ürün kartı  -->                
                 <div class="col-6 col-lg-4 col-xl-3"> 
+                    <a href="product-detail.html?name=poliviskon-cepli-erkek-gomlek-ceket" class="card-link">
                     <div class="card border-0 shadow-sm rounded-3 h-100 transition-card">
 
                         <div class="position-relative">
-                            <img src="assets/l_20251-s55715z8-rw0-95-76-90-185_a.webp" class="card-img-top rounded-top-3 img-fluid"
+                            <img src="assets/poliviskon-cepli-erkek-gomlek-ceket-1.webp" class="card-img-top rounded-top-3 img-fluid"
                             style="object-fit: cover;"/>
                             <span class="position-absolute top-0 end-0 m-2 badge bg-light text-dark rounded-pill px-3 py-2 shadow-sm">
                                 <i class="fa-solid fa-palette me-1 text-primary"></i>7 Renk
@@ -151,15 +184,17 @@
                         </div>
 
                     </div>
+                    </a>
 
                 </div>
 
                 <!-- 3. Ürün kartı  -->                
                 <div class="col-6 col-lg-4 col-xl-3"> 
+                    <a href="product-detail.html?name=uzun-kollu-erkek-ceket-gomlek" class="card-link">
                     <div class="card border-0 shadow-sm rounded-3 h-100 transition-card">
 
                         <div class="position-relative">
-                            <img src="assets/l_20251-s5aj50z8-crr-92-78-85-186_a.webp" class="card-img-top rounded-top-3 img-fluid"
+                            <img src="assets/uzun-kollu-erkek-ceket-gomlek-1.webp" class="card-img-top rounded-top-3 img-fluid"
                             style="object-fit: cover;">
                             <span class="position-absolute top-0 end-0 m-2 badge bg-light text-dark rounded-pill px-3 py-2 shadow-sm">
                                 <i class="fa-solid fa-palette me-1 text-primary"></i>6 Renk
@@ -200,15 +235,17 @@
                         </div>
 
                     </div>
+                    </a>
 
                 </div>
 
                 <!-- 4. Ürün kartı  -->                
                 <div class="col-6 col-lg-4 col-xl-3"> 
+                    <a href="product-detail.html?name=bej-cizgili-desen-gofreli-ceket" class="card-link">
                     <div class="card border-0 shadow-sm rounded-3 h-100 transition-card">
 
                         <div class="position-relative">
-                            <img src="assets/img_102308936v0_24cf7507-c65b-4519-9eb6-2d154b844ae3.webp" class="card-img-top rounded-top-3 img-fluid"
+                            <img src="assets/bej-cizgili-desen-gofreli-ceket-1.webp" class="card-img-top rounded-top-3 img-fluid"
                             style="object-fit: cover;">
                             <span class="position-absolute top-0 end-0 m-2 badge bg-light text-dark rounded-pill px-3 py-2 shadow-sm">
                                 <i class="fa-solid fa-palette me-1 text-primary"></i>5 Renk
@@ -218,8 +255,8 @@
                         
                         <div class="card-body d-flex flex-column">
                             
-                            <h5 class="card-title fw-bold text-dark mb-1">Bad Bear</h5>
-                            <p class="card-text text-muted mb-3">Thomas İçi Kürklü Erkek Oduncu Gömlek Ceket</p>
+                            <h5 class="card-title fw-bold text-dark mb-1">İMZA</h5>
+                            <p class="card-text text-muted mb-3">Bej Çizgili Desen Gofreli Mono Yaka Esnek Slim Fit Ceket</p>
                             
                             <div class="d-flex align-items-center mb-1">
 
@@ -249,34 +286,13 @@
                         </div>
 
                     </div>
+                    </a>
 
                 </div>
-
             
             </div>                
         </div>
     </section>
-
-    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-            
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="loginModalLabel">Giriş Gerekli</h5>
-                    </div>
-                    
-                    <div class="modal-body">
-                        Devam edebilmek için önce giriş yapmanız gerekiyor.
-                    </div>
-                    
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" id="modalRedirectBtn" data-bs-dismiss="modal">Tamam</button>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
 
 
                 <!--         FOOTER              -->
@@ -300,7 +316,27 @@
 
         </footer>
 
+        <!-- bu alertBox kısmı sayfanın en altında durmalı "</body>" den hemen önce -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+            
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="loginModalLabel">Giriş Gerekli</h5>
+                    </div>
+                    
+                    <div class="modal-body">
+                        Devam edebilmek için önce giriş yapmanız gerekiyor.
+                    </div>
+                    
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="modalRedirectBtn" data-bs-dismiss="modal">Tamam</button>
+                    </div>
 
+                </div>
+
+            </div>
+        </div>
 
 
 

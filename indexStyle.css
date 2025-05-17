@@ -93,11 +93,13 @@ nav label.cancel{
         display:block;
         position: fixed;
         top: 0;
-        left: -100%;
+        /* left: -100%; */
+        left: 0;
         width: 100%;
         max-width: 400%;
         padding: 45px;
         height: 100vh;
+        overflow-y: auto;
         background-color: white;
         box-shadow: none ;
         z-index: 12;
@@ -144,11 +146,23 @@ nav label.cancel{
 }
 
 .product{
-    position: relative;
+  position: relative;
   display: inline-block;
 }
+
+/*
+.Product-drowdown_menu strong {
+  margin-bottom: 5px;
+  box-shadow: none;
+  font-size: 18px;
+  color: #0c0b0b;
+}
+
+*/
+
+
 .Product_menu {
-  display: none; /* Başlangıçta gizli olacak */
+  display: none;
   position: absolute;
   top: 100%;
   left: 0;
@@ -157,28 +171,61 @@ nav label.cancel{
   width: max-content;
   box-shadow: 0 4px 8px rgba(245, 5, 125, 0.1);
   z-index: 999;
-  display: flex;
+  flex-direction: row;
   gap: 30px;
 }
 
 .Product-drowdown_menu {
-   
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.Product-drowdown_menu strong {
-  margin-bottom: 5px;
-  box-shadow: none;
-  font-size: 18px;
-  color: #0c0b0b;
+/*  Hover olayı: kullanıcı .product <li> üzerine gelince menüyü göster (sadece masaüstü için) */
+@media (min-width: 781px) {
+  .product:hover .Product_menu {
+    display: flex;
+  }
 }
-.Product_menu:hover{
-  display: flex;
-  opacity: 1; /* Üzerine gelindiğinde görünür */
-  transform: translateY(0); /* Normal konumuna gel */
+
+
+
+@media (max-width: 780px) {
+  .Product_menu {
+    display: none;
+    position: static;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #ecf0f3;
+    padding: 10px;
+    box-shadow: none;
+
+    max-height: calc(100vh - 60px);  /* Navbar başlığı/üst boşluk hesabı */
+    overflow-y: auto;               /* Burayı ekleyin */
+  }
+
+  .product.open .Product_menu {
+    display: flex;
+  }
+
+  .Product-drowdown_menu strong {
+    font-size: 18px;
+    color: #111;
+  }
+
+  .Product-drowdown_menu a {
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+    padding-left: 10px;
+  }
 }
+
+
+
+
+
+
 footer {
   background-color: #f0f0f0; /* Açık gri bir arka plan */
   padding: 20px;
