@@ -6,7 +6,7 @@
 }
 body{
     background: #ecf0f3;
-
+ overflow: visible;
 }
 nav{
     width: 100%;
@@ -33,24 +33,25 @@ nav .menu{
 
 }
 .menu ul{
-    list-style: none;
-    display: flex;
-
+     list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.menu li {
+ position: relative;
 }
 .menu ul a{
-    margin: 0 8px;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 400;
-    color:rgb(13, 22, 22);
-    display: inline-flex;
-    padding:10px 12px ;
-    box-shadow: inset -3px -3px 7px #ffffff,
-                 inset 3px 3px 5px #ceced1;
-    position: relative;
-    transition: all 0.3s ease;
+   text-decoration: none;
+  color: #333;
+  padding: 10px 18px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  font-size: 20px;
+  font-weight: 500;
 
 }
+
 .menu ul a:hover:before{
     content: '';
     position: absolute;
@@ -63,8 +64,10 @@ nav .menu{
    
 }
 .menu ul a:hover{
-    transform: translateY(-7px);
-    color: #420bd8;
+      background-color: #420bd8;
+  color: white;
+  box-shadow: 0 8px 20px rgba(66, 11, 216, 0.25);
+  transform: translateY(-2px);
 }
 nav label.button {
     color:#31344b;
@@ -138,4 +141,74 @@ nav label.cancel{
         
 
     }
+}
+
+.product{
+    position: relative;
+  display: inline-block;
+}
+.Product_menu {
+  display: none; /* Başlangıçta gizli olacak */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ecf0f3;
+  padding: 20px;
+  width: max-content;
+  box-shadow: 0 4px 8px rgba(245, 5, 125, 0.1);
+  z-index: 999;
+  display: flex;
+  gap: 30px;
+}
+
+.Product-drowdown_menu {
+   
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.Product-drowdown_menu strong {
+  margin-bottom: 5px;
+  box-shadow: none;
+  font-size: 18px;
+  color: #0c0b0b;
+}
+.Product_menu:hover{
+  display: flex;
+  opacity: 1; /* Üzerine gelindiğinde görünür */
+  transform: translateY(0); /* Normal konumuna gel */
+}
+footer {
+  background-color: #f0f0f0; /* Açık gri bir arka plan */
+  padding: 20px;
+  text-align: center; /* Metni ortala */
+  font-size: 0.9em; /* Daha küçük bir yazı boyutu */
+  color: #555; /* Gri bir metin rengi */
+}
+
+.iletisim-bilgileri h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.iletisim-bilgileri p {
+  margin-bottom: 5px;
+}
+
+.sosyal-medya a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.sosyal-medya img {
+  width: 30px;
+  height: 30px;
+}
+
+.telif-hakki {
+  margin-top: 15px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
 }
