@@ -6,6 +6,8 @@
      <link rel="stylesheet" href="indexStyle.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+
      <title>KOD ADI GONYALI HİLMİ</title>
     
     <style>
@@ -104,81 +106,13 @@
                 <!-- kartlar bu div'in içine yerleştirilecek (js ile) -->
 
 
-                <!-- 1. foto -->
-                <div class="col-12 col-lg-4 col-xl-4"> 
-                    <div class="card border-0 shadow-sm rounded-3 h-100 transition-card">
-                        <div class="position-relative">
-                            <img src="assets/bej-cizgili-desen-gofreli-ceket-1.webp" class="card-img-top rounded-top-3 img-fluid"
-                            style="object-fit: cover;">
-                        </div>
-                    </div>    
-                </div>    
-
-                <!-- 2. foto -->
-                <div class="col-12 col-lg-4 col-xl-4"> 
-                    <div class="card border-0 shadow-sm rounded-3 h-100 transition-card">
-                        <div class="position-relative">
-                            <img src="assets/bej-cizgili-desen-gofreli-ceket-2.webp" class="card-img-top rounded-top-3 img-fluid"
-                            style="object-fit: cover;">
-                        </div>
-                    </div>    
-                </div>    
-
-
-                <!-- info-->
-                <div class="col-12 col-lg-4 col-xl-4"> 
-                    <div class="card border-0 shadow-sm rounded-3 h-100 transition-card">
-
-                        <div class="card-body d-flex flex-column">
-                            
-                            <h5 class="card-title fw-bold text-dark mb-1">İMZA</h5>
-                            <p class="card-text text-muted mb-3">Bej Çizgili Desen Gofreli Mono Yaka Esnek Slim Fit Ceket</p>
-                            
-                            <div class="d-flex align-items-center mb-1">
-                                <div class="me-2">
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <small class="text-muted">(4)</small>
-
-                                    <span class="card-text text-muted mb-3"> <span>|</span> <a href="" style="color: #6c757d; text-decoration: underline;">Ürünü Değerlendir</a> </span>
-                                    <!-- ürünü değerlendir tıklandığında en aşağıdaki değerlendirmeler kısmına yönlendirmeli -->
-                                    <div class="card-text text-muted mb-3">Satıcı : <span style="color:#428bca;">HEAL ME</span> (İade Süresi: 1 Gün)</div>
-
-                                </div>
-                            </div>    
-
-                            
-                            <div class="mt-auto">
-
-                                <hr style="width:100%; margin: 5px;">
-                                <div class="d-flex align-items-center">
-                                    <span class="display-6 text-primary fw-bold">1499,99 TL</span>
-                                </div>
-                                <hr style="width:100%; margin: 5px;">
-
-                                <p class="card-text text-muted mb-3" style="text-align: left; background-color: #fdf7ee; padding: 10px 15px; margin-top: 8px;"><span><i class="fa-solid fa-tape"></i></span> Tişort uzunluğu omuz hizasından ölçülür</p>
-                                <button class="sepeteEkle btn btn-primary w-100 mt-auto">
-                                    <i class="fa-solid fa-cart-shopping me-2"></i>Sepete Ekle
-                                </button> 
-
-                            </div>
-
-
-                        </div>
-
-
-                    </div>    
-                </div>    
-
+               
 
 
             </div>
 
         </div>
-
+<!-- buraya ürün değerlendirmeleri gelecek. -->
     </section>
 
 
@@ -230,7 +164,7 @@
 <script src="script.js"></script>
 
 
-<!-- 
+
 <script>
 
     const queryString = window.location.search; // Get the query string, e.g., '?name=kurklu-erkek-oduncu-gomlek'
@@ -246,15 +180,22 @@
             title: "Dar Kalıp Erkek Blazer Ceket Ceket Ceket Ceket",
             brand: "LC Waikiki",
             price: "1.399,99 TL",
-            image: "assets/erkek-blazer-ceket-1.webp"
+            image1: "assets/erkek-blazer-ceket-1.webp",
+            image2: "assets/erkek-blazer-ceket-2.webp",
+            comments:"12",
+            seller: "Alley"                
+
         },
 
         {
             name: "poliviskon-cepli-erkek-gomlek-ceket",
             title: "Regular Fit Poliviskon Cepli Erkek Gömlek Ceket",
-            brand: "LC Visionr",
+            brand: "LC Vision",
             price: "999,99 TL",
-            image: "assets/poliviskon-cepli-erkek-gomlek-ceket-1.webp"
+            image1: "assets/poliviskon-cepli-erkek-gomlek-ceket-1.webp",
+            image2: "assets/poliviskon-cepli-erkek-gomlek-ceket-2.webp",
+            comments:"18",
+            seller: "YILMAZ"
         },
 
         {
@@ -262,7 +203,10 @@
             title: "Regular Fit Uzun Kollu Erkek Gömlek Ceket",
             brand: "SOUTHBLUE",
             price: "1499,99 TL",
-            image: "assets/uzun-kollu-erkek-ceket-gomlek-1.webp"
+            image1: "assets/uzun-kollu-erkek-ceket-gomlek-1.webp",
+            image2: "assets/uzun-kollu-erkek-ceket-gomlek-2.webp",
+            comments:"33",
+            seller: "Big Stone"
         },
 
         {
@@ -270,7 +214,10 @@
             title : "Bej Çizgili Desen Gofreli Mono Yaka Esnek Slim Fit Ceket",
             brand: "İMZA",
             price: "6999,99 TL",
-            image: "assets/bej-cizgili-desen-gofreli-ceket-1.webp"
+            image1: "assets/bej-cizgili-desen-gofreli-ceket-1.webp",
+            image2: "assets/bej-cizgili-desen-gofreli-ceket-2.webp",
+            comments:"4",
+            seller: "HEALME"
         },
 
     ];
@@ -282,13 +229,92 @@
         const container = document.getElementById("prdouct-detail");
 
         container.innerHTML = `
-        <div class="card border-0 shadow-sm rounded-3 p-4">
-                <img src="${product.image}" class="img-fluid mb-3" style="max-height: 400px; object-fit: cover;">
-                <h2 class="fw-bold">${product.title}</h2>
-                <p class="text-muted">${product.brand}</p>
-                <h3 class="text-primary fw-bold">${product.price}</h3>
-                <button class="btn btn-primary mt-3">Sepete Ekle</button>
-            </div>
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 row-cols-lg-3 my-5 align-items-center justify-content-center g-3">
+
+                <div class="col-12 col-lg-4 col-xl-4"> 
+                    <div class="card border-0 shadow-sm rounded-3 h-100 transition-card">
+                        <div class="position-relative">
+                            <img src="assets/${product.image1}" class="card-img-top rounded-top-3 img-fluid"
+                            style="object-fit: cover;">
+                        </div>
+                    </div>    
+                </div>    
+
+                <div class="col-12 col-lg-4 col-xl-4"> 
+                    <div class="card border-0 shadow-sm rounded-3 h-100 transition-card">
+                        <div class="position-relative">
+                            <img src="assets/${product.image2}" class="card-img-top rounded-top-3 img-fluid"
+                            style="object-fit: cover;">
+                        </div>
+                    </div>    
+                </div>    
+
+
+                <div class="col-12 col-lg-4 col-xl-4"> 
+                    <div class="card border-0 shadow-sm rounded-3 h-100 transition-card">
+
+                        <div class="card-body d-flex flex-column">
+                            
+                            <h5 class="card-title fw-bold text-dark mb-1">${product.brand}</h5>
+                            <p class="card-text mb-3">${product.title}</p>
+                            
+                            <div class="d-flex align-items-center mb-1">
+                                <div class="me-2">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <small class="">(${product.comments})</small>
+
+                                    <div class="card-text mb-3">
+                                         <a href="" style="color: #6c757d; text-decoration: underline;">
+                                            <span><i class="fa-solid fa-comment" style="color: #74C0FC;"></i></span>
+                                            Ürünü Değerlendir
+                                        </a> 
+                                        </div>
+                                    <div class="card-text mb-3">Satıcı : <span style="color:#428bca;">${product.seller}</span> (İade Süresi: 10 Gün)</div>
+
+                                </div>
+                            </div>    
+
+                            
+                            <div class="mt-auto">
+
+                                <hr style="width:100%; margin: 5px;">
+                                <div class="d-flex align-items-center">
+                                    <span class="display-6 text-primary fw-bold">${product.price}</span>
+                                </div>
+                                <hr style="width:100%; margin: 5px;">
+
+                                <button class="sepeteEkle btn btn-primary w-100 mt-3">
+                                    <i class="fa-solid fa-cart-shopping me-2"></i>Sepete Ekle
+                                </button> 
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                    
+                    <div class="card border-0 shadow-sm rounded-3 h-100 transition-card mt-3">
+                        <div class="card-body d-flex flex-column">
+                            <p  class="card-text mt-1 mb-1">Bu ürün <span style="color:#428bca;">${product.seller}</span> satıcısı tarafından gönderilecektir.</p>
+                            <hr style="height: 1px; border: 0;border-top: 1px solid rgba(0, 0, 0, 0.08);margin: 10px; padding: 0;">
+                            <p  class="card-text text-left mt-1 mb-1"> <span><i class="fa-solid fa-rotate-left" style="color: #428bca;"></i></span> <strong>10 Gün</strong> İçerisinde İade </p>
+                            <hr style="height: 1px; border: 0; border-top: 1px solid rgba(0, 0, 0, 0.08);margin: 10px; padding: 0;">
+                            <p  class="card-text text-left mt-1 mb-1" style="font-size: 17px;"> <span><i class="fi fi-br-percent-70" style="color: #428bca; font-size: 22px; padding: 3px;"></i></span> %70'e Varan İndirimleri Kaçırma! </p>
+                            
+                        </div>
+
+                    </div>   
+                    
+                </div>   
+
+            </div> 
+            
         `;
 
 
@@ -302,7 +328,7 @@
 
 
 
-</script> -->
+</script> 
 
 
 
