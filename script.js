@@ -1,29 +1,26 @@
-document.querySelectorAll(".sepeteEkle").forEach( function(button) { // bu satırdaki function "sepeteEkle" sınfına ait bütün butonları sırayla gezer.
-            button.addEventListener("click", function () {              // bu butona tıklanınca çalışacan fonksiyon.
-                let girisYaptiMi = localStorage.getItem("giris");
+document.addEventListener("click", function(e) {
+  
+  const btn = e.target.closest(".sepeteEkle");
+  if (!btn) return;
 
-                if (girisYaptiMi === "true") {
-                    alert("Sepete eklendi!");
-                } else {
-                    // Bootstrap modal'ı göster
-                    let modal = new bootstrap.Modal(document.getElementById('loginModal'));
-                    modal.show();
+  e.preventDefault();
+  e.stopPropagation();
 
-                    // Butona bir kez tıklanırsa yönlendirme yap
-                    const modalBtn = document.getElementById("modalRedirectBtn");
+  let girisYaptiMi = localStorage.getItem("giris");
+  
+  if (girisYaptiMi === "true") {
+    alert("Sepete eklendi!");
+  } else {
 
-                    // Önce eski listener varsa kaldır (önlem)
-                    modalBtn.onclick = null;
+    let modal = new bootstrap.Modal(document.getElementById('loginModal'));
+    modal.show();
+    
+    document.getElementById("modalRedirectBtn").onclick = () =>
+    window.location.href = "register.html";
+  }
 
-                    // Sonra yeni listener tanımla
-                    modalBtn.onclick = function () {
-                        window.location.href = "register.html";
-                    };
-                }
+});
 
-            });
-        }
-    )
 
 
 
