@@ -5,33 +5,48 @@
     font-family:sans-serif;
 }
 body{
-    background: #ecf0f3;
+    color: #222;
  overflow: visible;
 }
 nav{
+  
     width: 100%;
     padding: 12px 0;
-    background: #ecf0f3;
+    background: #222;
     box-shadow: -3px -3px 7px #ffffff,
                  3px 3px 5px #ceced1;
 }
 nav .menu{
-    max-width: 1270px;
-   
+     max-width: 1270px;
     margin: auto;
     padding: 0 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* bu zaten var */
     align-items: center;
 }
+.menu .divider {
+  width: 1px;
+  height: 20px;
+  background-color: #ccc;
+}
 .menu .logo a{
-    font-size: 30px;
-    font-weight: 600 ;
+      font-size: 30px;
+    font-weight: 600;
     text-decoration: none;
-    color: rgb(57, 73, 73);
-
+    color: #cab796;
+    display: flex;
+    align-items: center;
 
 }
+
+.logo-img {
+  height: 90px;
+  width: auto;
+  object-fit: contain;
+   margin-left: 0; /* sola dayalı */
+    margin-right: 12px; /* yazıya boşluk */
+}
+
 .menu ul{
      list-style: none;
   display: flex;
@@ -43,7 +58,7 @@ nav .menu{
 }
 .menu ul a{
    text-decoration: none;
-  color: #333;
+  color: #cab796;
   padding: 10px 18px;
   border-radius: 6px;
   transition: all 0.3s ease;
@@ -64,9 +79,9 @@ nav .menu{
    
 }
 .menu ul a:hover{
-  background-color: #575757;
+  background-color: #cab796;
   color: white;
-  box-shadow: 0 8px 20px rgba(66, 11, 216, 0.25);
+  box-shadow: 0 8px 20px #cab796;
   transform: translateY(-2px);
 }
 nav label.button {
@@ -100,7 +115,7 @@ nav label.cancel{
         padding: 45px;
         height: 100vh;
         overflow-y: auto;
-        background-color: white;
+        background-color: #222;
         box-shadow: none ;
         z-index: 12;
          transition: all 0.3s ease;
@@ -166,7 +181,7 @@ nav label.cancel{
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #ecf0f3;
+  background-color: #222;
   padding: 20px;
   width: max-content;
   box-shadow: 0 4px 8px rgba(245, 5, 125, 0.1);
@@ -220,10 +235,89 @@ nav label.cancel{
     padding-left: 10px;
   }
 }
+/* banner next buttons */
+ .slider-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 300vw; /* Mobilde taşmayı engeller */
+  }
+
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; /* 3 slayt varsa 100% * 3 */
+  }
+
+  .slides a {
+    width: 100vw; /* Her slayt ekranın tamamını kaplasın */
+    flex-shrink: 0;
+  }
+
+  .slides img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .prev { left: 10px; }
+  .next { right: 10px; }
+
+
+  /*             kücük resimler         */
+.info-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 10px;
+  background-color: #f5f8ff;
+  flex-wrap: wrap;
+}
+
+.info-box {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 220px;
+  text-align: center;
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
 
 
 
+.info-box img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 15px;
+}
 
+.info-box h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #1e2a50;
+}
+
+.info-box p {
+  font-size: 14px;
+  color: #555;
+}
+
+/*        footer       */
 
 
 footer {
