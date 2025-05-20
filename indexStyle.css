@@ -64,7 +64,7 @@ nav .menu{
    
 }
 .menu ul a:hover{
-      background-color: #420bd8;
+  background-color: #575757;
   color: white;
   box-shadow: 0 8px 20px rgba(66, 11, 216, 0.25);
   transform: translateY(-2px);
