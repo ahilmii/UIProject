@@ -6,9 +6,11 @@
      <link rel="stylesheet" href="indexStyle.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <link  href="data-bs-interval='10000'">
      <title>KOD ADI GONYALI HİLMİ</title>
     
     <style>
+       
         /* Hover efekti için geçiş animasyonu */
         .transition-card {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -47,11 +49,12 @@
         
         <div class="menu">
             <input type="checkbox" id="check">
-            <div class="logo"> <a href="index.html">Style Of Turkish Men </br></a></div>
+            <div class="logo"> <a href="index.html"><img src="assets/copy1.png"  class="logo-img" ></a></div>
             
              <ul>
                 <label class="button cancel" for="check"><i class="fas fa-times"></i></label>
                 <li><a href="index.html">Home</a></li>
+                <li class="divider"></li>
                 
                 <li class="product">
                     <a href="product.html">Products</a>
@@ -76,8 +79,9 @@
                     </div>
                 </li>  
 
-               <!--about iptal -->
+               <li class="divider"></li>
                 <li><a href="#">Feedback</a></li>
+                <li class="divider"></li>
                 <!-- register iconlu olacak-->
                 <li><a href="register.html">Register</a></li>
             </ul>
@@ -90,12 +94,20 @@
   <br>
 
     <!--                                 büyük resim                           -->
+
+  
+  
     <div class="container-fluid p-0">
-        <div class=" position-relative text-white text-center">
-           
-            <a href="product.html"><img src="assets/Minimal erkek modası konulu fotoğraf ve yazı odaklı banner.png" class="img-fluid w-100" alt="Ürün Resmi"></a>
-             <a href="product.html" class="btn btn-light position-absolute top-60 start-50 translate-middle">Show Products</a>
-        </div>
+          <div class="slider-wrapper">
+  <div class="slides">
+    <a href="product.html"><img src="assets/Aes tHE TIC.png" alt="Banner 1"></a>
+    <a href="product.html"><img src="assets/Minimal erkek modası konulu fotoğraf ve yazı odaklı banner.png" alt="Banner 2"></a>
+    <a href="product.html"><img src="assets/Organized &Optimized.png" alt="Banner 3"></a>
+  </div>
+
+  <button class="prev">&#10094;</button>
+  <button class="next">&#10095;</button>
+</div>
         <br>
         <div class=" position-relative text-white text-center">
             <a href="product.html"><img src="assets/Aes tHE TIC.png" class="img-fluid w-100" alt="Ürün Resmi"></a>
@@ -105,6 +117,32 @@
             <a href="product.html"><img src="assets/Organized &Optimized.png" class="img-fluid w-100" alt="Ürün Resmi"></a>
         </div>
     </div>
+    <!-- js for button -->
+<script>
+  let index = 0;
+  const slides = document.querySelector('.slides');
+  const totalSlides = slides.children.length;
+
+  function updateSlide() {
+    slides.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  document.querySelector('.next').onclick = () => {
+    index = (index + 1) % totalSlides;
+    updateSlide();
+  };
+
+  document.querySelector('.prev').onclick = () => {
+    index = (index - 1 + totalSlides) % totalSlides;
+    updateSlide();
+  };
+
+  //Autonom 
+  setInterval(() => {
+    index = (index + 1) % totalSlides;
+    updateSlide();
+  }, 10000); // 10000 ms = 10 s
+</script>
 
 
     <script>
@@ -134,21 +172,33 @@
 
 
 
-    <section class="bg-light mt-5">
-        <div class="container-lg ">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 my-5 align-items-center justify-content-center g-3">
-
-                <!-- 1. Ürün kartı  -->
-              
-
-            
-            </div>                
-        </div>
-    </section>
+   
 
 
 
     <!-- buraya lc de olduğu gibi kapıda nakit ödeme ücretsiz kargo gibi "kart" lar eklenecek. -->
+<section class="info-section">
+  <div class="info-box">
+    <img src="assets/free cargo.svg" alt="İade" />
+    <h3>Ücretsiz İade</h3>
+    <p>14 gün içinde koşulsuz iade imkanı</p>
+  </div>
+  <div class="info-box">
+    <img src="assets/door.svg" alt="Kapıda ödeme" />
+    <h3>Kapıda Ödeme</h3>
+    <p>Kolay ve güvenli ödeme seçenekleri</p>
+  </div>
+  <div class="info-box">
+    <img src="assets/contract.svg" alt="Güvence" />
+    <h3>Orijinal Ürün Garantisi</h3>
+    <p>Tüm ürünler orijinal ve garantilidir</p>
+  </div>
+  <div class="info-box">
+    <img src="assets/kurye.svg" alt="Ücretsiz kargo" />
+    <h3>Ücretsiz Kargo</h3>
+    <p>İlk siparişinize özel ücretsiz kargo</p>
+  </div>
+</section>
 
 
     <!--         FOOTER              -->
