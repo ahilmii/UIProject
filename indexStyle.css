@@ -32,8 +32,9 @@ nav .menu{
   background-color: #ccc;
 }
 .menu .logo a{
-      font-size: 30px;
-    font-weight: 600;
+  
+    width: 200px;
+    height: 40;
     text-decoration: none;
     color: #cab796;
     display: flex;
@@ -41,13 +42,7 @@ nav .menu{
 
 }
 
-.logo-img {
-  height: 90px;
-  width: auto;
-  object-fit: contain;
-   margin-left: 0; /* sola dayalı */
-    margin-right: 12px; /* yazıya boşluk */
-}
+
 
 .menu ul{
      list-style: none;
