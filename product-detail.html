@@ -185,13 +185,14 @@
             image2: "assets/erkek-blazer-ceket-2.webp",
             comments:"12",
             seller: "Alley",
-            commnet1: "Gömleğin rengi ve bedeni tam istediğim gibi, güvenle alabilirsiniz :)",
-            commnet2: "Gömleği kağıttan mı yaptınız anlamadım, ütülerken yandı!!!!",
-            commnet3: "30 derecede yıkama yapın, yoksa çekebilir",
-            commnet4: "mankenin instası var mı",
-            commnet5: "çok rahat çok profesyonel"
+            reviews: [
+                { user: "user1", rating:5,   text:"18 gündür ürünü bekliyorum halen gelmedi, üstte dursun diye 5 yıldız veriyorum!!!"},
+                { user: "user2", rating:4.5, text:"mankenin instası var mı"},
+                { user: "user3", rating:2.5, text:"Gömleği kağıttan mı yaptınız anlamadım, ütülerken yandı!!!!"},
+                { user: "user4", rating:3,   text:"30 derecede yıkama yapın, yoksa çekebilir"},
+                { user: "user5", rating:5,   text:"Gömleğin rengi ve bedeni tam istediğim gibi, güvenle alabilirsiniz :)"},
+            ],
         },
-
         {
             name: "kisa-kollu-cizgili-erkek-gomlek",
             title: "Navy Blue Regular Fit Short Sleeve Striped Men's Shirt",
@@ -201,12 +202,15 @@
             image2: "assets/originalHuseyin3.png",
             comments:"18",
             seller: "YILMAZ",
-            commnet1: "çok rahat çok profesyonel",
-            commnet2: "Ceket gerçekten çok şık duruyor, herkes nereden aldığımı soruyor.!!",
-            commnet3: "30 derecede yıkama yapın, yoksa çekebilir",
-            commnet4: "mankenin instası var mı",
-            commnet5: "Gömleğin rengi ve bedeni tam istediğim gibi, güvenle alabilirsiniz :)"
+            reviews: [
+                { user: "user1", rating:4.5, text:"çok rahat çok profesyonel"},
+                { user: "user2", rating:4.5, text:"mankenin instası var mı"},
+                { user: "user3", rating:2.5, text:"Gömleği kağıttan mı yaptınız anlamadım, ütülerken yandı!!!!"},
+                { user: "user4", rating:3, text:"30 derecede yıkama yapın, yoksa çekebilir"},
+                { user: "user5", rating:5, text:"Gömleğin rengi ve bedeni tam istediğim gibi, güvenle alabilirsiniz :)"},
+            ],
         },
+
         {
             name: "uzun-kollu-erkek-ceket-gomlek",
             title: "Regular Fit Long Sleeve Men's Shirt Jacket",
@@ -216,11 +220,10 @@
             image2: "assets/uzun-kollu-erkek-ceket-gomlek-2.webp",
             comments:"33",
             seller: "Big Stone",
-            commnet1: "Gömleğin rengi ve bedeni tam istediğim gibi, güvenle alabilirsiniz :)",
-            commnet2: "Gömleği kağıttan mı yaptınız anlamadım, ütülerken yandı!!!!",
-            commnet3: "30 derecede yıkama yapın, yoksa çekebilir",
-            commnet4: "mankenin instası var mı",
-            commnet5: "çok rahat çok profesyonel"
+            reviews: [
+                { user: "user1", rating:5,   text:"Gömlek gerçekten çok şık duruyor, herkes nereden aldığımı soruyor.!!"},
+                { user: "user2", rating:3.5, text:"Gömlek güzel ama dikiş yerlerinde hafif potluk var."},
+            ]
         },
 
         {
@@ -232,11 +235,13 @@
             image2: "./assets/bej-cizgili-desen-gofreli-ceket-2.webp",
             comments:"4",
             seller: "HEALME",
-            commnet1: "Gömleğin rengi ve bedeni tam istediğim gibi, güvenle alabilirsiniz :)",
-            commnet2: "Gömleği kağıttan mı yaptınız anlamadım, ütülerken yandı!!!!",
-            commnet3: "30 derecede yıkama yapın, yoksa çekebilir",
-            commnet4: "mankenin instası var mı",
-            commnet5: "çok rahat çok profesyonel"
+            reviews: [
+                { user: "user1", rating:4.5, text:"çok rahat çok profesyonel"},
+                { user: "user2", rating:4.5, text:"mankenin instası var mı"},
+                { user: "user3", rating:2.5, text:"Gömleği kağıttan mı yaptınız anlamadım, ütülerken yandı!!!!"},
+                { user: "user4", rating:3,   text:"30 derecede yıkama yapın, yoksa çekebilir"},
+                { user: "user5", rating:5,   text:"Gömleğin rengi ve bedeni tam istediğim gibi, güvenle alabilirsiniz :)"},
+            ]
             
         },
 
@@ -348,51 +353,19 @@ document.addEventListener('DOMContentLoaded', function() {
                             <h5 class="card-title" style="font-weight:700;">Ürün Değerlendirme</h5>
                             
                             <div class="review-list">
-                                
+                                ${product.reviews.map(review => `    
+
                                 <div class="review-item mb-4">
                                     <div class="d-flex align-items-center mb-1">
-                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+                                        ${generateStars(review.rating)}
                                     </div>    
                                     
-                                    <p class="fw-bold mb-1">user1</p>
-                                    <p class="mb-2">Ürünün kumaşını çok beğendim ancak bir beden küçük geldi.</p>
+                                    <p class="fw-bold mb-1">${review.user}</p>
+                                    <p class="mb-2">${review.text}</p>
                                 </div>
-                            
                                 <hr style="width:100%; margin-top: 0; margin-bottom: 16px;">
 
-
-                                <div class="review-item mb-4">
-                                    <div class="d-flex align-items-center mb-1">
-                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                    </div>    
-                                    
-                                    <p class="fw-bold mb-1">user2</p>
-                                    <p class="mb-2">8 gündür bekliyorum halen ürün gelmedi. 1 yıldız veriyorum!!</p>
-                                </div>
-                            
-                                <hr style="width:100%; margin-top: 0; margin-bottom: 16px;">
-
-                                <div class="review-item mb-4">
-                                    <div class="d-flex align-items-center mb-1">
-                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    </div>    
-                                    
-                                    <p class="fw-bold mb-1">user3</p>
-                                    <p class="mb-2">Ceket gerçekten çok şık duruyor, herkes nereden aldığımı soruyor.!!</p>
-                                </div>
-
+                                `).join('')}
 
                             </div>
 
@@ -401,13 +374,25 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                 </div> 
 
-
-
-
-
-
-            
         `;
+          
+        function generateStars(rating) {
+        let starsHtml = '';
+        const fullStars = Math.floor(rating);
+        const hasHalfStar = rating % 1 !== 0;
+
+        for (let i = 0; i < fullStars; i++) {
+            starsHtml += '<i class="fa-solid fa-star" style="color: #FFD43B;"></i>';
+        }
+        if (hasHalfStar) {
+            starsHtml += '<i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>';
+        }
+        const emptyStars = 5 - Math.ceil(rating);
+        for (let i = 0; i < emptyStars; i++) {
+            starsHtml += '<i class="fa-regular fa-star" style="color: #FFD43B;"></i>';
+        }
+        return starsHtml;
+}
 
 
 
