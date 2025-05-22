@@ -54,14 +54,13 @@ nav .menu{
  position: relative;
 }
 .menu ul a{
-   text-decoration: none;
+  text-decoration: none;
   color: #cab796;
   padding: 10px 18px;
   border-radius: 6px;
   transition: all 0.3s ease;
   font-size: 20px;
   font-weight: 500;
-
 }
 
 .menu ul a:hover:before{
@@ -82,8 +81,8 @@ nav .menu{
   transform: translateY(-2px);
 }
 nav label.button {
-    color:#31344b;
-    font-size: 18px;
+    color:#cab796;
+    font-size: 25px;
     cursor: pointer;
     display: none;
 
@@ -99,15 +98,17 @@ nav label.cancel{
    display: none;
 
 }
-@media(max-width:780px){
+
+
+@media(max-width:880px){
   
     .menu ul{
         display:block;
         position: fixed;
         top: 0;
-        /* left: -100%; */
-        left: 0;
-        width: 100%;
+        left: -100%;
+        
+        width: 100% ;
         max-width: 400%;
         padding: 45px;
         height: 100vh;
@@ -118,12 +119,18 @@ nav label.cancel{
          transition: all 0.3s ease;
          
     }
+    .menu .divider {
+  width: 1px;
+  height: 20px;
+  background-color: #222;
+}
     .menu ul a{
         display: block;
        font-size: 23px;
        width: 100%;
        max-width: 100%;
-       background: #ecf0f3;
+       background: #f1d39e;
+       color: #222;
        padding:10px 12px ;
        box-shadow: inset -3px -3px 7px #ffffff,
                     inset 3px 3px 5px #0c0c0c;
@@ -138,11 +145,11 @@ nav label.cancel{
     }
     .menu ul a:hover::before{
         box-shadow: none;
-
+        
     }
     nav label.bars{
         display: block;
-
+        background: #222;
     }
     #check:checked ~ label.bars{
       display: none;
@@ -158,78 +165,44 @@ nav label.cancel{
 }
 
 .product{
-  position: relative;
-  display: inline-block;
+   list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 24px;
 }
 
-/*
-.Product-drowdown_menu strong {
-  margin-bottom: 5px;
-  box-shadow: none;
-  font-size: 18px;
-  color: #0c0b0b;
-}
 
-*/
 
 
 .Product_menu {
-  display: none;
+display: none;
   position: absolute;
   top: 100%;
   left: 0;
   background-color: #222;
   padding: 20px;
   width: max-content;
-  box-shadow: 0 4px 8px rgba(245, 5, 125, 0.1);
+  box-shadow: inset -3px -3px 7px #5a5a5a, inset 3px 3px 5px #3b3b3b;
   z-index: 999;
-  flex-direction: row;
-  gap: 30px;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
 }
 
 .Product-drowdown_menu {
   display: flex;
   flex-direction: column;
   gap: 8px;
+   
 }
 
-/*  Hover olayı: kullanıcı .product <li> üzerine gelince menüyü göster (sadece masaüstü için) */
+/*    product media */
 @media (min-width: 781px) {
   .product:hover .Product_menu {
-    display: flex;
-  }
-}
+    display: flex !important;
+    flex-direction: row;
+    gap: 30px;
 
-
-
-@media (max-width: 780px) {
-  .Product_menu {
-    display: none;
-    position: static;
-    flex-direction: column;
-    gap: 10px;
-    background-color: #ecf0f3;
-    padding: 10px;
-    box-shadow: none;
-
-    max-height: calc(100vh - 60px);  /* Navbar başlığı/üst boşluk hesabı */
-    overflow-y: auto;               /* Burayı ekleyin */
-  }
-
-  .product.open .Product_menu {
-    display: flex;
-  }
-
-  .Product-drowdown_menu strong {
-    font-size: 18px;
-    color: #111;
-  }
-
-  .Product-drowdown_menu a {
-    font-size: 16px;
-    color: #333;
-    text-decoration: none;
-    padding-left: 10px;
   }
 }
 
@@ -246,7 +219,7 @@ nav label.cancel{
 }
 
 .info-box {
-  background: #fff;
+  background: #222;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   padding: 20px;
@@ -267,12 +240,12 @@ nav label.cancel{
 .info-box h3 {
   font-size: 18px;
   margin-bottom: 10px;
-  color: #1e2a50;
+  color: #c9cacc;
 }
 
 .info-box p {
   font-size: 14px;
-  color: #555;
+  color: white;
 }
 
 /*        footer       */
