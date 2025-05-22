@@ -10,7 +10,7 @@
      <title>KOD ADI GONYALI HİLMİ</title>
     
     <style>
-       
+      
         /* Hover efekti için geçiş animasyonu */
         .transition-card {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -90,59 +90,32 @@
         </div>
     
     </nav>
-
+<br>
   <br>
 
     <!--                                 büyük resim                           -->
 
   
   
-    <div class="container-fluid p-0">
-          <div class="slider-wrapper">
-  <div class="slides">
-    <a href="product.html"><img src="assets/Aes tHE TIC.png" alt="Banner 1"></a>
-    <a href="product.html"><img src="assets/Minimal erkek modası konulu fotoğraf ve yazı odaklı banner.png" alt="Banner 2"></a>
-    <a href="product.html"><img src="assets/Organized &Optimized.png" alt="Banner 3"></a>
-  </div>
-
-  <button class="prev">&#10094;</button>
-  <button class="next">&#10095;</button>
-</div>
-        <br>
-        <div class=" position-relative text-white text-center">
-            <a href="product.html"><img src="assets/Aes tHE TIC.png" class="img-fluid w-100" alt="Ürün Resmi"></a>
-        </div>
+    
+         <div class=" position-relative text-white text-center">
+              <a href="product.html"><img src="assets/blac style kbanner.png" class="img-fluid w-100" alt="Banner 1"></a>
+         </div>
+         
          <br>
-        <div class=" position-relative text-white text-center">
+         <div class=" position-relative text-white text-center">
+               <a href="product.html"><img src="assets/fathers day.png" class="img-fluid w-100" alt="Banner 3"></a></div>
+         </div>
+         <br>
+         <div class=" position-relative text-white text-center">
+            <a href="product.html"><img src="assets/Aes tHE TIC.png" class="img-fluid w-100" alt="Ürün Resmi"></a>
+         </div>
+          <br>
+         <div class=" position-relative text-white text-center">
             <a href="product.html"><img src="assets/Organized &Optimized.png" class="img-fluid w-100" alt="Ürün Resmi"></a>
-        </div>
-    </div>
-    <!-- js for button -->
-<script>
-  let index = 0;
-  const slides = document.querySelector('.slides');
-  const totalSlides = slides.children.length;
+         </div>
+   
 
-  function updateSlide() {
-    slides.style.transform = `translateX(-${index * 100}%)`;
-  }
-
-  document.querySelector('.next').onclick = () => {
-    index = (index + 1) % totalSlides;
-    updateSlide();
-  };
-
-  document.querySelector('.prev').onclick = () => {
-    index = (index - 1 + totalSlides) % totalSlides;
-    updateSlide();
-  };
-
-  //Autonom 
-  setInterval(() => {
-    index = (index + 1) % totalSlides;
-    updateSlide();
-  }, 10000); // 10000 ms = 10 s
-</script>
 
 
     <script>
@@ -213,7 +186,7 @@
     <a href="#"><i class="fa-brands fa-twitter fa-beat"   style="font-size:20px;"></i></a>
     <a href="https://www.instagram.com/hsynyyllmz/" target="_blank"><i class="fa-brands fa-instagram fa-beat" style="font-size:20px;"></i></a>
   </div>
-  <div class="copyright">
+  <div class="iletisim-bilgileri">
     <p>© 2023 All Rights Reserved - Style Of Turkish Men</p>
   </div>
 </footer>

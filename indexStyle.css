@@ -1,27 +1,29 @@
 *{
+  
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family:sans-serif;
 }
 body{
-    color: #222;
- overflow: visible;
-}
+    
+    overflow: visible;
+} 
+
 nav{
   
     width: 100%;
     padding: 12px 0;
     background: #222;
-    box-shadow: -3px -3px 7px #ffffff,
-                 3px 3px 5px #ceced1;
+    box-shadow: -3px -3px 7px #c5b69c,
+                 3px 3px 5px #cab796;
 }
 nav .menu{
      max-width: 1270px;
     margin: auto;
     padding: 0 20px;
     display: flex;
-    justify-content: space-between; /* bu zaten var */
+    justify-content: space-between; 
     align-items: center;
 }
 .menu .divider {
@@ -79,7 +81,7 @@ nav .menu{
    
 }
 .menu ul a:hover{
-  background-color: #cab796;
+  background-color: #b99962;
   color: white;
   box-shadow: 0 8px 20px #cab796;
   transform: translateY(-2px);
@@ -235,46 +237,7 @@ nav label.cancel{
     padding-left: 10px;
   }
 }
-/* banner next buttons */
- .slider-wrapper {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    max-width: 300vw; /* Mobilde taşmayı engeller */
-  }
 
-  .slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: 100%; /* 3 slayt varsa 100% * 3 */
-  }
-
-  .slides a {
-    width: 100vw; /* Her slayt ekranın tamamını kaplasın */
-    flex-shrink: 0;
-  }
-
-  .slides img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  .prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 2rem;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 10;
-  }
-
-  .prev { left: 10px; }
-  .next { right: 10px; }
 
 
   /*             kücük resimler         */
@@ -288,7 +251,7 @@ nav label.cancel{
 }
 
 .info-box {
-  background: white;
+  background: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   padding: 20px;
@@ -321,7 +284,7 @@ nav label.cancel{
 
 
 footer {
-  background-color: #f0f0f0; /* Açık gri bir arka plan */
+  background-color: #000000; /* Açık gri bir arka plan */
   padding: 20px;
   text-align: center; /* Metni ortala */
   font-size: 0.9em; /* Daha küçük bir yazı boyutu */
@@ -331,11 +294,12 @@ footer {
 .iletisim-bilgileri h3 {
   margin-top: 0;
   margin-bottom: 10px;
-  color: #333;
+  color: #cab796;
 }
 
 .iletisim-bilgileri p {
   margin-bottom: 5px;
+  color: #dacbb1;
 }
 
 .sosyal-medya a {
@@ -350,6 +314,6 @@ footer {
 
 .telif-hakki {
   margin-top: 15px;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #cab796;
   padding-top: 10px;
 }
