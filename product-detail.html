@@ -53,41 +53,40 @@
         
         <div class="menu">
             <input type="checkbox" id="check">
-            <div class="logo"> <a href="index.html">Style Of Turkish Men </br></a></div>
+            <div class="logo"> <a href="index.html"><img src="assets/copy1.png"  class="logo-img" ></a></div>
             
              <ul>
                 <label class="button cancel" for="check"><i class="fas fa-times"></i></label>
                 <li><a href="index.html">Home</a></li>
+                <li class="divider"></li>
                 
                 <li class="product">
                     <a href="product.html">Products</a>
                     
                     <div class="Product_menu">
                         <div class="Product-drowdown_menu">
-                            <strong>Clothing</strong>   
-                            <a href="#">T-shirts</a>
-                            <a href="#">Trousers</a>
-                            <a href="#">Jackets</a>
+                            
+                            <a href="">Jacket</a>  
+                            
                         </div>
 
                         <div class="Product-drowdown_menu">
-                            <strong>Underwear</strong>
-                            <a href="#">Tank  </a>
-                            <a href="#">Boxers</a>
-                            <a href="#">Socks</a>
+                            
+                            <a href="">Trousers</a>
+                            
                         </div>
 
                         <div class="Product-drowdown_menu">
-                            <strong>Shoes</strong>
-                            <a href="#">Sneakers</a>
-                            <a href="#">Formal</a>
-                            <a href="#">Slippers</a>
+                            <a href="">Shoes</a>
+                           
                         </div>
                     </div>
                 </li>  
 
-                <li><a href="#">About</a></li>
+               <li class="divider"></li>
                 <li><a href="#">Feedback</a></li>
+                <li class="divider"></li>
+                <!-- register iconlu olacak-->
                 <li><a href="register.html">Register</a></li>
             </ul>
 
@@ -98,8 +97,6 @@
 
     <section class="bg-light mt-5">
 
-        
-
         <div id="product-detail" class="container-lg mt-5">
 
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 row-cols-lg-3 my-5 align-items-center justify-content-center g-3">
@@ -108,12 +105,19 @@
                
 
 
+
+                <!-- yorumlaaar -->
+                
+
+
+
+
+
             </div>
 
         </div>
 <!-- buraya ürün değerlendirmeleri gelecek. -->
     </section>
-
 
 
 <footer>
@@ -133,21 +137,21 @@
 </footer>
 
 
-    <!-- bu alertBox kısmı sayfanın en altında durmalı "</abody>" den hemen önce -->
+    <!-- bu alertBox kısmı sayfanın en altında durmalı  den hemen önce -->
    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
         
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="loginModalLabel">Giriş Gerekli</h5>
+                    <h5 class="modal-title" id="loginModalLabel">Log in required</h5>
                 </div>
                 
                 <div class="modal-body">
-                    Devam edebilmek için önce giriş yapmanız gerekiyor.
+                    You must log in before you can continue.
                 </div>
                 
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" id="modalRedirectBtn" data-bs-dismiss="modal">Tamam</button>
+                    <button type="button" class="btn btn-primary" id="modalRedirectBtn" data-bs-dismiss="modal">OK</button>
                 </div>
 
             </div>
@@ -173,8 +177,8 @@
     const products = [
         {
             name: "erkek-blazer-ceket",
-            title: "Dar Kalıp Erkek Blazer Ceket Ceket Ceket Ceket",
-            brand: "LC Waikiki",
+            title: "Slim Fit Men's Blazer Jacket Jacket Jacket Jacket",
+            brand: "Style Of Turkish Men",
             price: "1.399,99 TL",
             image1: "assets/erkek-blazer-ceket-1.webp",
             image2: "assets/erkek-blazer-ceket-2.webp",
@@ -185,8 +189,8 @@
 
         {
             name: "kisa-kollu-cizgili-erkek-gomlek",
-            title: "Lacivert Regular Fit Kısa Kollu Çizgili Erkek Gömlek",
-            brand: "LC Vision",
+            title: "Navy Blue Regular Fit Short Sleeve Striped Men's Shirt",
+            brand: "SOTM Vision",
             price: "999,99 TL",
             image1: "assets/originalHuseyin2.png",
             image2: "assets/originalHuseyin3.png",
@@ -196,7 +200,7 @@
 
         {
             name: "uzun-kollu-erkek-ceket-gomlek",
-            title: "Regular Fit Uzun Kollu Erkek Gömlek Ceket",
+            title: "Regular Fit Long Sleeve Men's Shirt Jacket",
             brand: "SOUTHBLUE",
             price: "1499,99 TL",
             image1: "assets/uzun-kollu-erkek-ceket-gomlek-1.webp",
@@ -207,8 +211,8 @@
 
         {
             name: "bej-cizgili-desen-gofreli-ceket",
-            title : "Bej Çizgili Desen Gofreli Mono Yaka Esnek Slim Fit Ceket",
-            brand: "İMZA",
+            title : "Beige Striped Pattern Embossed Mono Collar Flexible Slim Fit Jacket",
+            brand: "SOTM Class",
             price: "6999,99 TL",
             image1: "./assets/bej-cizgili-desen-gofreli-ceket-1.webp",
             image2: "./assets/bej-cizgili-desen-gofreli-ceket-2.webp",
@@ -271,10 +275,10 @@ document.addEventListener('DOMContentLoaded', function() {
                                     <div class="card-text mb-3">
                                          <a href="" style="color: #6c757d; text-decoration: underline;">
                                             <span><i class="fa-solid fa-comment" style="color: #74C0FC;"></i></span>
-                                            Ürünü Değerlendir
+                                            Rate the Product
                                         </a> 
                                         </div>
-                                    <div class="card-text mb-3">Satıcı : <span style="color:#428bca;">${product.seller}</span> (İade Süresi: 10 Gün)</div>
+                                    <div class="card-text mb-3">Seller : <span style="color:#428bca;">${product.seller}</span> (Return Period: 14 Days)</div>
 
                                 </div>
                             </div>    
@@ -289,7 +293,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <hr style="width:100%; margin: 5px;">
 
                                 <button class="sepeteEkle btn btn-primary w-100 mt-3">
-                                    <i class="fa-solid fa-cart-shopping me-2"></i>Sepete Ekle
+                                    <i class="fa-solid fa-cart-shopping me-2"></i>Add to Cart
                                 </button> 
 
                             </div>
@@ -302,11 +306,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     
                     <div class="card border-0 shadow-sm rounded-3 h-100 transition-card mt-3">
                         <div class="card-body d-flex flex-column">
-                            <p  class="card-text mt-1 mb-1">Bu ürün <span style="color:#428bca;">${product.seller}</span> satıcısı tarafından gönderilecektir.</p>
+                            <p  class="card-text mt-1 mb-1">This product will be shipped by seller <span style="color:#428bca;">${product.seller}</span>. </p>
                             <hr style="height: 1px; border: 0;border-top: 1px solid rgba(0, 0, 0, 0.08);margin: 10px; padding: 0;">
-                            <p  class="card-text text-left mt-1 mb-1"> <span><i class="fa-solid fa-rotate-left" style="color: #428bca;"></i></span> <strong>10 Gün</strong> İçerisinde İade </p>
+                            <p  class="card-text text-left mt-1 mb-1"> <span><i class="fa-solid fa-rotate-left" style="color: #428bca;"></i></span> Returns within  <strong>10 days</strong>. </p>
                             <hr style="height: 1px; border: 0; border-top: 1px solid rgba(0, 0, 0, 0.08);margin: 10px; padding: 0;">
-                            <p  class="card-text text-left mt-1 mb-1" style="font-size: 17px;"> <span><i class="fi fi-br-percent-70" style="color: #428bca; font-size: 22px; padding: 3px;"></i></span> %70'e Varan İndirimleri Kaçırma! </p>
+                            <p  class="card-text text-left mt-1 mb-1" style="font-size: 17px;"> <span><i class="fi fi-br-percent-70" style="color: #428bca; font-size: 22px; padding: 3px;"></i></span> Don’t miss discounts of up to 70%! </p>
                             
                         </div>
 
@@ -315,6 +319,73 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>   
 
             </div> 
+
+
+
+                <div class="row g-3 mt-4 mb-2"> 
+                    <div class="col-12 col-lg-12">
+                        <div class="card-body" style="background-color:#ebf0f5;"> 
+                            <h5 class="card-title" style="font-weight:700;">Ürün Değerlendirme</h5>
+                            
+                            <div class="review-list">
+                                
+                                <div class="review-item mb-4">
+                                    <div class="d-flex align-items-center mb-1">
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+                                    </div>    
+                                    
+                                    <p class="fw-bold mb-1">user1</p>
+                                    <p class="mb-2">Ürünün kumaşını çok beğendim ancak bir beden küçük geldi.</p>
+                                </div>
+                            
+                                <hr style="width:100%; margin-top: 0; margin-bottom: 16px;">
+
+
+                                <div class="review-item mb-4">
+                                    <div class="d-flex align-items-center mb-1">
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                                    </div>    
+                                    
+                                    <p class="fw-bold mb-1">user2</p>
+                                    <p class="mb-2">8 gündür bekliyorum halen ürün gelmedi. 1 yıldız veriyorum!!</p>
+                                </div>
+                            
+                                <hr style="width:100%; margin-top: 0; margin-bottom: 16px;">
+
+                                <div class="review-item mb-4">
+                                    <div class="d-flex align-items-center mb-1">
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    </div>    
+                                    
+                                    <p class="fw-bold mb-1">user3</p>
+                                    <p class="mb-2">Ceket gerçekten çok şık duruyor, herkes nereden aldığımı soruyor.!!</p>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div> 
+
+
+
+
+
+
             
         `;
 

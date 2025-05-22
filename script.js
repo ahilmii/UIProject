@@ -23,8 +23,6 @@ document.addEventListener("click", function(e) {
 
 
 
-
-
     // Mobilde Products’a tıklayınca alt menü aç/kapat
 document.addEventListener("DOMContentLoaded", function () {
   const productMenuItem = document.querySelector("li.product > a");
