@@ -6,7 +6,7 @@ const products = [
             title: "Slim Fit Men's Blazer Elegant and Modern Look",
             brand: "Style Of Turkish Men",
             price: "1.399,99 TL",
-            category: "Shoes",
+            category: "Upper Wear",
             color:"7 Color",
             image1: "assets/erkek-blazer-ceket-1.webp",
             image2: "assets/erkek-blazer-ceket-2.webp",
@@ -39,13 +39,31 @@ const products = [
                 { user: "user5", rating:5, text:"Gömleğin rengi ve bedeni tam istediğim gibi, güvenle alabilirsiniz :)"},
             ],
         },
-
+        {
+            name: "umut1",
+            title : "Men's Off White Linen Look Button Down Summer Shirt",
+            brand: "SOTM Classic",
+            price: "579,99 TL",
+            category: "Upper Wear",
+            color:"2 Color",
+            image1: "assets/umut1.png",
+            image2: "assets/umut2.png",
+            comments:"4",
+            seller: "HEALME",
+            reviews: [  
+                { user: "user2", rating:4.5, text:"mankenin instası var mı"},
+                { user: "user1", rating:4.5, text:"çok rahat çok profesyonel"},
+                { user: "user3", rating:2.5, text:"Gömleği kağıttan mı yaptınız anlamadım, ütülerken yandı!!!!"},
+                { user: "user4", rating:3,   text:"30 derecede yıkama yapın, yoksa çekebilir"},
+            ]
+            
+        },
         {
             name: "uzun-kollu-erkek-ceket-gomlek",
             title: "Regular Fit Long Sleeve Men's Shirt Jacket",
             brand: "SOUTHBLUE",
             price: "1499,99 TL",
-            category: "Shoes",
+            category: "Upper Wear",
             color:"5 Color",
             image1: "assets/uzun-kollu-erkek-ceket-gomlek-1.webp",
             image2: "assets/uzun-kollu-erkek-ceket-gomlek-2.webp",
@@ -56,7 +74,63 @@ const products = [
                 { user: "user2", rating:3.5, text:"Gömlek güzel ama dikiş yerlerinde hafif potluk var."},
             ]
         },
-
+         {
+            name: "kahverengi-ayakabi-sneak1",
+            title : "Brown Laced Men's Sneakers",
+            brand: "God Shoes",
+            price: "2399,99 TL",
+            category: "Shoes",
+            color:"4 Color",
+            image1: "assets/kahverengi-ayakabi-sneak1.webp",
+            image2: "assets/kahverengi-ayakabi-sneak2.webp",
+            comments:"4",
+            seller: "Hamza Al",
+            reviews: [  
+                { user: "user2", rating:4.5, text:"gayet iyi"},
+                { user: "user1", rating:4.5, text:"çok rahat çok profesyonel"},
+                { user: "user3", rating:2.5, text:"Gömleği kağıttan mı yaptınız anlamadım, ütülerken yandı!!!!"},
+                { user: "user4", rating:3,   text:"30 derecede yıkama yapın, yoksa çekebilir"},
+            ]
+            
+        },
+        {
+            name: "kahverengi-pantalon1",
+            title : "Brown Standard Pattern Men's Trousers",
+            brand: "SOTM Modern",
+            price: "279,99 TL",
+            category: "Trousers",
+            color:"1 Color",
+            image1: "assets/kahverengi-pantalon1.webp",
+            image2: "assets/kahverengi-pantalon2.webp",
+            comments:"4",
+            seller: "Micheal Jackson",
+            reviews: [  
+                { user: "user2", rating:4.5, text:"mankenin instası var mı"},
+                { user: "user1", rating:4.5, text:"çok rahat çok profesyonel"},
+                { user: "user3", rating:2.5, text:"Gömleği kağıttan mı yaptınız anlamadım, ütülerken yandı!!!!"},
+                { user: "user4", rating:3,   text:"30 derecede yıkama yapın, yoksa çekebilir"},
+            ]
+            
+        },
+        {
+            name: "lacivert-klasik-ayakabi1",
+            title : "Navy Blue Men's Classic Shoes",
+            brand: "God Shoes",
+            price: "479,99 TL",
+            category: "Shoes",
+            color:"4 Color",
+            image1: "assets/lacivert-klasik-ayakabi1.webp",
+            image2: "assets/lacivert-klasik-ayakabi2.webp",
+            comments:"4",
+            seller: "Ali Sezer",
+            reviews: [  
+                { user: "user2", rating:4.5, text:"gayet iyi"},
+                { user: "user1", rating:4.5, text:"çok rahat çok profesyonel"},
+                { user: "user3", rating:2.5, text:"Gömleği kağıttan mı yaptınız anlamadım, ütülerken yandı!!!!"},
+                { user: "user4", rating:3,   text:"30 derecede yıkama yapın, yoksa çekebilir"},
+            ]
+            
+        },
         {
             name: "bej-cizgili-desen-gofreli-ceket",
             title : "Beige Striped Pattern Embossed Mono Collar Flexible Slim Fit Jacket",
@@ -66,6 +140,201 @@ const products = [
             color:"4 Color",
             image1: "./assets/bej-cizgili-desen-gofreli-ceket-1.webp",
             image2: "./assets/bej-cizgili-desen-gofreli-ceket-2.webp",
+            comments:"4",
+            seller: "HEALME",
+            reviews: [
+                { user: "user1", rating:4.5, text:"çok rahat çok profesyonel"},
+                { user: "user2", rating:4.5, text:"mankenin instası var mı"},
+                { user: "user3", rating:2.5, text:"Gömleği kağıttan mı yaptınız anlamadım, ütülerken yandı!!!!"},
+                { user: "user4", rating:3,   text:"30 derecede yıkama yapın, yoksa çekebilir"},
+                { user: "user5", rating:5,   text:"Gömleğin rengi ve bedeni tam istediğim gibi, güvenle alabilirsiniz :)"},
+            ]
+            
+        },
+        {
+            name: "lacivert-polo-yaka-kisa-kollu-pike-erkek-tisort",
+            title : "Lacivert Polo Yaka Kısa Kollu Pike Erkek",
+            brand: "POLO",
+            price: "345,99 TL",
+            category: "Upper Wear",
+            color:"7 Color",
+            image1: "assets/lacivert-polo-yaka-kisa-kollu-pike-erkek-tisort1.webp",
+            image2: "assets/lacivert-polo-yaka-kisa-kollu-pike-erkek-tisort2.webp",
+            comments:"8",
+            seller: "HEALME",
+            reviews: [
+                { user: "user1", rating:4.5, text:"çok rahat çok profesyonel"},
+                { user: "user2", rating:4.5, text:"mankenin instası var mı"},
+                { user: "user3", rating:2.5, text:"Gömleği kağıttan mı yaptınız anlamadım, ütülerken yandı!!!!"},
+                { user: "user4", rating:3,   text:"30 derecede yıkama yapın, yoksa çekebilir"},
+            ]
+            
+        },
+         {
+            name: "beyaz-spor-ayakabi1",
+            title : "White Laced Men's Sneakers",
+            brand: "Cool Shoes",
+            price: "2399,99 TL",
+            category: "Shoes",
+            color:"4 Color",
+            image1: "assets/beyaz-spor-ayakabi1.webp",
+            image2: "assets/beyaz-spor-ayakabi2.webp",
+            comments:"4",
+            seller: "HEALME",
+            reviews: [  
+                { user: "user2", rating:4.5, text:"gayet iyi"},
+                { user: "user1", rating:4.5, text:"çok rahat çok profesyonel"},
+                { user: "user3", rating:2.5, text:"Gömleği kağıttan mı yaptınız anlamadım, ütülerken yandı!!!!"},
+                { user: "user4", rating:3,   text:"30 derecede yıkama yapın, yoksa çekebilir"},
+            ]
+            
+        },
+        {
+            name: "polo-yaka-kisa-kollu-pike-erkek-tisort2",
+            title : "Polo Collar Short Sleeve Pique Men's T-Shirt",
+            brand: "SOTM Classic",
+            price: "399,99 TL",
+            category: "Upper Wear",
+            color:"4 Color",
+            image1: "assets/polo-yaka-kisa-kollu-pike-erkek-tisort2.webp",
+            image2: "assets/polo-yaka-kisa-kollu-pike-erkek-tisort1.webp",
+            comments:"4",
+            seller: "HEALME",
+            reviews: [  
+                { user: "user2", rating:4.5, text:"mankenin instası var mı"},
+                { user: "user1", rating:4.5, text:"çok rahat çok profesyonel"},
+                { user: "user3", rating:2.5, text:"Gömleği kağıttan mı yaptınız anlamadım, ütülerken yandı!!!!"},
+                { user: "user4", rating:3,   text:"30 derecede yıkama yapın, yoksa çekebilir"},
+            ]
+            
+        },
+        {
+            name: "siyah-standart-pantalon1",
+            title : "Black Standard Fit Men's Trousers",
+            brand: "SOTM Version",
+            price: "799,99 TL",
+            category: "Trousers",
+            color:"4 Color",
+            image1: "assets/siyah-standart-pantalon1.webp",
+            image2: "assets/siyah-standart-pantalon2.webp",
+            comments:"3",
+            seller: "FARUK",
+            reviews: [  
+                { user: "user2", rating:4.5, text:"mankenin instası var mı"},
+                { user: "user1", rating:4.5, text:"çok rahat çok profesyonel"},
+                { user: "user3", rating:2.5, text:"Gömleği kağıttan mı yaptınız anlamadım, ütülerken yandı!!!!"},
+                
+            ]
+            
+        },
+        
+         {
+            name: "bej-pantalon1",
+            title : "Beige Standard Pattern Linen Look Men's Pleated Trousers",
+            brand: "SOTM Version",
+            price: "799,99 TL",
+            category: "Trousers",
+            color:"4 Color",
+            image1: "assets/bej-pantalon1.webp",
+            image2: "assets/bej-pantalon2.webp",
+            comments:"3",
+            seller: "FARUK",
+            reviews: [  
+                { user: "user2", rating:4.5, text:"mankenin instası var mı"},
+                { user: "user1", rating:4.5, text:"çok rahat çok profesyonel"},
+                { user: "user3", rating:2.5, text:"Gömleği kağıttan mı yaptınız anlamadım, ütülerken yandı!!!!"},
+                
+            ]
+            
+        },
+        {
+            name: "siyah-file-ayakabi1",
+            title : "Black Mesh Detailed Men's Sneakers",
+            brand: "SOTM Modern",
+            price: "879,99 TL",
+            category: "Shoes",
+            color:"1 Color",
+            image1: "assets/siyah-file-ayakabi1.webp",
+            image2: "assets/siyah-file-ayakabi2.webp",
+            comments:"3",
+            seller: "Fatih Sultan Mehmet",
+            reviews: [  
+                { user: "user2", rating:4.5, text:"mankenin instası var mı"},
+                { user: "user1", rating:4.5, text:"çok rahat çok profesyonel"},
+                { user: "user3", rating:2.5, text:"Gömleği kağıttan mı yaptınız anlamadım, ütülerken yandı!!!!"},
+                
+            ]
+            
+        },
+        
+        {
+            name: "antrasit-rahat-erkek-pantallon1",
+            title : "Anthracite Relaxed Fit Men's Cargo Trousers",
+            brand: "SOTM Modern",
+            price: "279,99 TL",
+            category: "Trousers",
+            color:"1 Color",
+            image1: "assets/antrasit-rahat-erkek-pantallon1.webp",
+            image2: "assets/antrasit-rahat-erkek-pantallon2.webp",
+            comments:"3",
+            seller: "Elvis Presley",
+            reviews: [  
+                { user: "user2", rating:4.5, text:"mankenin instası var mı"},
+                { user: "user1", rating:4.5, text:"çok rahat çok profesyonel"},
+                { user: "user3", rating:2.5, text:"Gömleği kağıttan mı yaptınız anlamadım, ütülerken yandı!!!!"},
+                
+            ]
+            
+        },
+        
+        {
+            name: "ekru (1)",
+            title : "Ecru Regular Fit Men's Trousers",
+            brand: "SOTM Modern",
+            price: "1079,99 TL",
+            category: "Trousers",
+            color: "8 Color",
+            image1: "assets/ekru (1).webp",
+            image2: "assets/ekru (2).webp",
+            comments:"3",
+            seller: "Dua Lipa",
+            reviews: [  
+                { user: "user2", rating:4.5, text:"mankenin instası var mı"},
+                { user: "user1", rating:4.5, text:"çok rahat çok profesyonel"},
+                { user: "user3", rating:2.5, text:"Gömleği kağıttan mı yaptınız anlamadım, ütülerken yandı!!!!"},
+                
+            ]
+            
+        },
+        {
+            name: "gri-rahat-pantalon1",
+            title : "Grey Casual Fit Men's Trousers",
+            brand: "SOTM Modern",
+            price: "199,99 TL",
+            category: "Trousers",
+            color: "8 Color",
+            image1: "assets/gri-rahat-pantalon1.webp",
+            image2: "assets/gri-rahat-pantalon1.webp",
+            comments:"3",
+            seller: "Dua Lipa",
+            reviews: [  
+                { user: "user2", rating:4.5, text:"mankenin instası var mı"},
+                { user: "user1", rating:4.5, text:"çok rahat çok profesyonel"},
+                { user: "user3", rating:2.5, text:"Gömleği kağıttan mı yaptınız anlamadım, ütülerken yandı!!!!"},
+                
+            ]
+            
+        },
+          {
+            name: "yesil-regular-fit-keten-erkek-gomlek1",
+            title : "Green Regular Fit Linen Blend Men's Shirt",
+            brand: "SOTM Classic",
+            price: "699,99 TL",
+            category: "Upper Wear",
+            category: "Upper Wear",
+            color:"4 Color",
+            image1: "./assets/yesil-regular-fit-keten-erkek-gomlek1.webp",
+            image2: "./assets/yesil-regular-fit-keten-erkek-gomlek2.webp",
             comments:"4",
             seller: "HEALME",
             reviews: [
@@ -141,8 +410,8 @@ document.addEventListener('DOMContentLoaded', function() {
                                         ${generateStars(product.reviews.reduce((acc, r) => acc + r.rating, 0) / product.reviews.length || 0)}
                                         <small class="">(${product.comments})</small>
                                         <div class="card-text mb-3">
-                                            <a href="" style="color: #6c757d; text-decoration: underline;">
-                                                <span><i class="fa-solid fa-comment" style="color: #74C0FC;"></i></span>
+                                            <a href="" style="color: #222; text-decoration: underline;">
+                                                <span><i class="fa-solid fa-comment" style="color: #cab796;"></i></span>
                                                 Rate the Product
                                             </a>
                                         </div>
@@ -152,9 +421,10 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <div class="mt-auto">
                                     <hr style="width:100%; margin: 5px;">
                                     <div class="d-flex align-items-center">
-                                        <span class="display-6 text-primary fw-bold">${product.price}</span>
+                                        <span class="display-6 fw-bold"  style="dcolor:#222;">${product.price}</span>
                                     </div>
                                     <hr style="width:100%; margin: 5px;">
+                                    <button class="sepeteEkle btn w-100 mt-3"  style="background-color:#cab796; color:#222;">
                                     <button class="sepeteEkle btn btn-primary w-100 mt-3">
                                         <i class="fa-solid fa-cart-shopping me-2"></i>Add to Cart
                                     </button>
@@ -166,7 +436,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             <div class="card-body d-flex flex-column">
                                 <p class="card-text mt-1 mb-1">This product will be shipped by seller <span style="color:#428bca;">${product.seller}</span>. </p>
                                 <hr style="height: 1px; border: 0;border-top: 1px solid rgba(0, 0, 0, 0.08);margin: 10px; padding: 0;">
-                                <p class="card-text text-left mt-1 mb-1"> <span><i class="fa-solid fa-rotate-left" style="color: #428bca;"></i></span> Returns within  <strong>10 days</strong>. </p>
+                                <p class="card-text text-left mt-1 mb-1"> <span><i class="fa-solid fa-rotate-left" style="color: #222;"></i></span> Returns within  <strong>10 days</strong>. </p>
                                 <hr style="height: 1px; border: 0; border-top: 1px solid rgba(0, 0, 0, 0.08);margin: 10px; padding: 0;">
                                 <p class="card-text text-left mt-1 mb-1" style="font-size: 17px;"> <span><i class="fi fi-br-percent-70" style="color: #428bca; font-size: 22px; padding: 3px;"></i></span> Don’t miss discounts of up to 70%! </p>
                             </div>
@@ -232,9 +502,9 @@ document.addEventListener('DOMContentLoaded', function() {
                                         </div>
                                         <div class="mt-auto">
                                             <div class="d-flex align-items-center">
-                                                <span class="display-6 text-primary fw-bold">${product.price}</span>
+                                                <span class="display-6 fw-bold" style="color:black;">${product.price}</span>
                                             </div>
-                                            <button class="sepeteEkle btn btn-primary w-100 mt-auto ">
+                                            <button class="sepeteEkle btn w-100 mt-auto" style="background-color:#cab796; color:black;>
                                                 <i class="fa-solid fa-cart-shopping me-2"></i>Add to Cart
                                             </button>
                                         </div>

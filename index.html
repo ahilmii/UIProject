@@ -29,7 +29,6 @@
         .hero-section img {
             object-fit: cover;
             height: 100%;
-            
             filter: brightness(60%);
         }
 
@@ -57,11 +56,10 @@
                 <li class="divider"></li>
                 
                 <li class="product">
-                    <a href="product.html">Products</a>
+                    <a class="whatever" href="product.html">Products</a>
                     
                     <div class="Product_menu">
                         <div class="Product-drowdown_menu">
-                            <a href="product.html?category=All"          data-category="All">All</a>
                             <a href="product.html?category=Upper%20Wear" data-category="Upper Wear">Upper Wear</a>  
                             <a href="product.html?category=Trousers"     data-category="Trousers">Trousers</a>
                             <a href="product.html?category=Shoes"        data-category="Shoes">Shoes</a>                           
@@ -70,7 +68,7 @@
                 </li>  
 
                <li class="divider"></li>
-                <li><a href="#">Feedback</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
                 <li class="divider"></li>
                 <!-- register iconlu olacak-->
                 <li><a href="register.html">Register</a></li>
@@ -171,6 +169,41 @@
     <p>Enjoy free shipping on your first order</p>
   </div>
 </section>
+<!--  FeedBack button    -->
+<button id="commentButton" 
+  style="
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+  "
+  onmouseover="this.style.backgroundColor='#0056b3'"
+  onmouseout="this.style.backgroundColor='#007bff'">
+  Ask Us
+</button>
+
+<script>
+  const btn = document.getElementById('commentButton');
+  btn.addEventListener('click', () => {
+    const commentSection = document.getElementById('commentInput');
+    if(commentSection){
+      commentSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      commentSection.focus();
+    }
+  });
+</script>
+
+
+
 
 
     <!--         FOOTER              -->
