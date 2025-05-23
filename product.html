@@ -47,10 +47,11 @@
                     
                     <div class="Product_menu">
                         <div class="Product-drowdown_menu">
-                            <a href="">Upper wear</a>  
-                            <a href="">Trousers</a>
-                            <a href="">Shoes</a>
-                           </div>
+                            <a href="product.html?category=All" data-category="All">All</a>
+                            <a href="product.html?category=Upper%20Wear" data-category="Upper Wear">Upper Wear</a>  
+                            <a href="product.html?category=Trousers"     data-category="Trousers">Trousers</a>
+                            <a href="product.html?category=Shoes"        data-category="Shoes">Shoes</a>                           
+                        </div>
                     </div>
                 </li>  
 
@@ -65,220 +66,23 @@
         </div>
     
     </nav>
-    <br>
 
- 
+    <div class="container-lg my-4">
+        <div class="d-flex justify-content-center flex-wrap" id="category-filter-buttons">
+            <button class="btn mx-2 my-1 active" data-category="All" style="background-color:#cab760; color:#212529;">All</button>
+            <button class="btn mx-2 my-1" data-category="Upper Wear" style="background-color:#cab760; color:#212529;">Upper Wear</button>
+            <button class="btn mx-2 my-1" data-category="Trousers"   style="background-color:#cab760; color:#212529;">Trousers</button>
+            <button class="btn mx-2 my-1" data-category="Shoes"      style="background-color:#cab760; color:#212529;">Shoes</button>
+        </div>
+    </div>
     
    
 
-     <section class="bg-light mt-5">
+    <section class="bg-light mt-5">
         <div class="container-lg ">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 my-5 align-items-center justify-content-center g-3">
-
-                <!-- 1. Ürün kartı  -->
-                <div class="col-6 col-lg-4 col-xl-3 d-flex"> 
-                    <a href="product-detail.html?name=erkek-blazer-ceket" class="card-link">
-                    <div class="card border-0 shadow-sm rounded-3 h-100 transition-card flex-fill">
-
-                        <div class="position-relative">
-                            <img src="assets/erkek-blazer-ceket-1.webp"
-                              class="card-img-top rounded-top-3 img-fluid"
-                             style="object-fit: cover;"/>
-                            <span class="position-absolute top-0 end-0 m-2 badge bg-light text-dark rounded-pill px-3 py-2 shadow-sm">
-                                <i class="fa-solid fa-palette me-1 text-primary"></i>3 Color
-                            </span>
-                        </div>
-
-                        
-                        <div class="card-body d-flex flex-column">
-                            
-                            <h5 class="card-title fw-bold text-dark mb-1">Style Of Turkish Men</h5>
-                            <p class="card-text text-muted mb-3">Slim Fit Men's Blazer Elegant and Modern Look</p>
-                            
-                            <div class="d-flex align-items-center mb-1">
-
-                                <div class="me-2">
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
-                                    <small class="text-muted">(12)</small>
-                                </div>
-                            </div>    
-
-                            <div class="mt-auto">
-
-                                <div class="d-flex align-items-center">
-                                    <span class="display-6 text-primary fw-bold">1.399,99 TL</span>
-                                </div>
-
-                                <button class="sepeteEkle btn btn-primary w-100 mt-auto ">
-                                    <i class="fa-solid fa-cart-shopping me-2"></i>Add to Cart
-                                </button> 
-
-                            </div>
+            <div id="product-list-container" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 my-5 align-items-center justify-content-center g-3">
 
 
-                        </div>
-
-                    </div>
-                    </a>
-
-                </div>
-
-                <!-- 2. Ürün kartı  -->                
-                <div class="col-6 col-lg-4 col-xl-3"> 
-                    <a href="product-detail.html?name=kisa-kollu-cizgili-erkek-gomlek" class="card-link">
-                    <div class="card border-0 shadow-sm rounded-3 h-100 transition-card">
-
-                        <div class="position-relative">
-                            <img src="assets/originalHuseyin.png" class="card-img-top rounded-top-3 img-fluid"
-                            style="object-fit: cover; width: 312px; height:416px;"/>
-                            <span class="position-absolute top-0 end-0 m-2 badge bg-light text-dark rounded-pill px-3 py-2 shadow-sm">
-                                <i class="fa-solid fa-palette me-1 text-primary"></i>7 Color
-                            </span>
-                        </div>
-
-                        
-                        <div class="card-body d-flex flex-column">
-                            
-                            <h5 class="card-title fw-bold text-dark mb-1">SOTM Vision</h5>
-                            <p class="card-text text-muted mb-3">Regular Fit Polyviscose Pocket Men's Shirt Jacket</p>
-                            
-                            <div class="d-flex align-items-center mb-1">
-
-                                <div class="me-2">
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                    <small class="text-muted">(18)</small>
-                                </div>
-                            </div>    
-
-                            <div class="mt-auto">
-
-                                <div class="d-flex align-items-center">
-                                    <span class="display-6 text-primary fw-bold">999,99 TL</span>
-                                </div>
-
-                                <button class="sepeteEkle btn btn-primary w-100 mt-auto">
-                                    <i class="fa-solid fa-cart-shopping me-2"></i>Add to Cart
-                                </button> 
-
-                            </div>
-
-
-                        </div>
-
-                    </div>
-                    </a>
-
-                </div>
-
-                <!-- 3. Ürün kartı  -->                
-                <div class="col-6 col-lg-4 col-xl-3"> 
-                    <a href="product-detail.html?name=uzun-kollu-erkek-ceket-gomlek" class="card-link">
-                    <div class="card border-0 shadow-sm rounded-3 h-100 transition-card">
-
-                        <div class="position-relative">
-                            <img src="assets/uzun-kollu-erkek-ceket-gomlek-1.webp" class="card-img-top rounded-top-3 img-fluid"
-                            style="object-fit: cover;">
-                            <span class="position-absolute top-0 end-0 m-2 badge bg-light text-dark rounded-pill px-3 py-2 shadow-sm">
-                                <i class="fa-solid fa-palette me-1 text-primary"></i>6 Color
-                            </span>
-                        </div>
-
-                        
-                        <div class="card-body d-flex flex-column">
-                            
-                            <h5 class="card-title fw-bold text-dark mb-1">SOUTHBLUE</h5>
-                            <p class="card-text text-muted mb-3">Regular Fit Long Sleeve Men's Shirt Jacket</p>
-                            
-                            <div class="d-flex align-items-center mb-1">
-
-                                <div class="me-2">
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                    <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                    <small class="text-muted">(33)</small>
-                                </div>
-                            </div>    
-
-                            <div class="mt-auto">
-
-                                <div class="d-flex align-items-center">
-                                    <span class="display-6 text-primary fw-bold">1499,99 TL</span>
-                                </div>
-
-                                <button class="sepeteEkle btn btn-primary w-100 mt-auto">
-                                    <i class="fa-solid fa-cart-shopping me-2"></i>Add To Cart
-                                </button> 
-
-                            </div>
-
-
-                        </div>
-
-                    </div>
-                    </a>
-
-                </div>
-
-                <!-- 4. Ürün kartı  -->                
-                <div class="col-6 col-lg-4 col-xl-3"> 
-                    <a href="product-detail.html?name=bej-cizgili-desen-gofreli-ceket" class="card-link">
-                    <div class="card border-0 shadow-sm rounded-3 h-100 transition-card">
-
-                        <div class="position-relative">
-                            <img src="assets/bej-cizgili-desen-gofreli-ceket-1.webp" class="card-img-top rounded-top-3 img-fluid"
-                            style="object-fit: cover;">
-                            <span class="position-absolute top-0 end-0 m-2 badge bg-light text-dark rounded-pill px-3 py-2 shadow-sm">
-                                <i class="fa-solid fa-palette me-1 text-primary"></i>5 Color
-                            </span>
-                        </div>
-
-                        
-                        <div class="card-body d-flex flex-column">
-                            
-                            <h5 class="card-title fw-bold text-dark mb-1">SOTM Class</h5>
-                            <p class="card-text text-muted mb-3">Beige Striped Pattern Embossed Mono Collar Flexible Slim Fit Jacket</p>
-                            
-                            <div class="d-flex align-items-center mb-1">
-
-                                <div class="me-2">
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <small class="text-muted">(4)</small>
-                                </div>
-                            </div>    
-
-                            <div class="mt-auto">
-
-                                <div class="d-flex align-items-center">
-                                    <span class="display-6 text-primary fw-bold">1499,99 TL</span>
-                                </div>
-
-                                <button class="sepeteEkle btn btn-primary w-100 mt-auto">
-                                    <i class="fa-solid fa-cart-shopping me-2"></i>Add To Cart
-                                </button> 
-
-                            </div>
-
-
-                        </div>
-
-                    </div>
-                    </a>
-
-                </div>
             
             </div>                
         </div>
@@ -333,10 +137,9 @@
         
     
     
-    
-    
-    </body>
-
-<script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="productsData.js"></script>
+<script src="script.js"></script>
+    
+</body>
 </html>
