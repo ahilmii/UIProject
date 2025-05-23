@@ -1,3 +1,4 @@
+/* sepete ekle bölümü */
 document.addEventListener("click", function(e) {
   
   const btn = e.target.closest(".sepeteEkle");

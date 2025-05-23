@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="indexStyle.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <link  href="data-bs-interval='10000'">
+     <title>KOD ADI GONYALI HİLMİ</title>
+  <style>
+  body {
+      text-align: center;   
+    }
+   h1 {
+      margin-bottom: 35px;
+      font-weight: 600;
+      font-size: 28px;
+      color: #222;
+    }
+    .faq-item {
+        background-color: #fff;
+      margin-bottom: 18px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 12px;
+    }
+    .question {
+        
+      font-weight: 600;
+      cursor: pointer;
+      position: relative;
+      padding-right: 18px;
+      display: inline-block;
+      max-width: 90%;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .question::after {
+      content: '+';
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: 16px;
+      transition: transform 0.3s ease;
+      color: #888;
+    }
+    .question.active::after {
+      content: '-';
+      transform: rotate(180deg);
+      color: #444;
+    }
+    .answer {
+      margin-top: 6px;
+      display: none;
+      max-width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      color: #555;
+      font-weight: 400;
+      font-size: 13px;
+    }
+    .answer.show {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+     <nav>
+        
+        <div class="menu">
+            <input type="checkbox" id="check">
+            <div class="logo"> <a href="index.html"><img src="assets/logo.png" style="height: 120px;" class="logo-img" ></a></div>
+            
+             <ul>
+                <label class="button cancel" for="check"><i class="fas fa-times"></i></label>
+                <li><a href="index.html">Home</a></li>
+                <li class="divider"></li>
+                
+                <li class="product">
+                    <a class="whatever" href="product.html">Products</a>
+                    
+                    <div class="Product_menu">
+                        <div class="Product-drowdown_menu">
+                            <a href="product.html">Upper wear</a> 
+                            <a href="product.html">Trousers</a>
+                            <a href="product.html">Shoes</a>
+                           </div>
+                    </div>
+                </li>  
+
+               <li class="divider"></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li class="divider"></li>
+                <!-- register iconlu olacak-->
+                <li><a href="register.html">Register</a></li>
+            </ul>
+
+            <label class="button bars" for="check"><i class="fas fa-bars"></i></label>
+        </div>
+    
+    </nav>
+<br>
+  <h1>Frequently Asked Questions</h1>
+
+  <div class="faq-item">
+    <div class="question">1. What sizes do you offer?</div>
+    <div class="answer">We offer a wide range of sizes from XS to XXL to fit all body types comfortably.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="question">2. How do I know which size fits me best?</div>
+    <div class="answer">Please check our detailed size chart available on each product page to find your perfect fit.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="question">3. Can I return or exchange clothes if they don’t fit?</div>
+    <div class="answer">Yes, you can return or exchange items within 30 days as long as they are in original condition with tags.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="question">4. How long does shipping take?</div>
+    <div class="answer">Standard shipping usually takes 5-7 business days within the country.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="question">5. Do you offer international shipping?</div>
+    <div class="answer">Yes, we ship internationally. Delivery times and costs vary depending on the destination.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="question">6. What materials are your clothes made of?</div>
+    <div class="answer">Our clothes are made from high-quality cotton, polyester blends, and eco-friendly fabrics.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="question">7. How do I care for my clothes?</div>
+    <div class="answer">Please follow the care instructions on each label to maintain quality and longevity.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="question">8. Can I cancel my order after placing it?</div>
+    <div class="answer">Orders can be canceled within 1 hour of placement. Please contact customer service immediately.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="question">9. Are your clothes ethically made?</div>
+    <div class="answer">Yes, we ensure our products are sourced and made under fair labor conditions.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="question">10. Do you have seasonal sales or discounts?</div>
+    <div class="answer">Yes, we regularly offer sales during holidays and special occasions. Subscribe to our newsletter to stay updated.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="question">11. How can I track my order?</div>
+    <div class="answer">After shipping, you will receive a tracking number via email to monitor your package.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="question">12. What payment methods do you accept?</div>
+    <div class="answer">We accept credit/debit cards, PayPal, and Apple Pay for your convenience.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="question">13. How do I contact customer support?</div>
+    <div class="answer">You can email us at support@clothingstore.com or call (123) 456-7890 during business hours.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="question">14. Can I request a custom order?</div>
+    <div class="answer">Currently, we do not offer custom orders, but we plan to introduce this soon.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="question">15. Do you offer gift cards?</div>
+    <div class="answer">Yes, digital gift cards are available for purchase on our website.</div>
+  </div>
+
+  <script>
+    const questions = document.querySelectorAll('.question');
+    questions.forEach(q => {
+      q.addEventListener('click', () => {
+        q.classList.toggle('active');
+        const answer = q.nextElementSibling;
+        answer.classList.toggle('show');
+      });
+    });
+  </script>
+
+
+<!-- Yorum ekleme kısmı -->
+  <h2 style="margin-top:40px; font-size:22px; color:#222;">Ask a Question</h2>
+
+<form id="questionForm" style="margin-bottom: 20px; text-align: center;">
+  <input type="text" id="qName" placeholder="Your Name" style="width: 90%; padding: 8px; margin-bottom: 8px; font-size:14px;" required /><br/>
+  <input type="email" id="qEmail" placeholder="Your Email" style="width: 90%; padding: 8px; margin-bottom: 8px; font-size:14px;" required /><br/>
+  <textarea id="questionInput" rows="3" placeholder="Write your question here..." style="width: 90%; padding: 8px; font-size:14px;" required></textarea><br/>
+  <button type="submit" style="margin-top: 8px; padding: 8px 20px; font-size:14px; cursor:pointer;">Submit Question</button>
+</form>
+
+<div id="questionsList" style="max-width: 90%; margin: 0 auto 40px auto; text-align: left; color: #555; font-size: 13px;">
+  <h3>Your Questions:</h3>
+  <!-- Sorular buraya eklenecek -->
+</div>
+
+<!-- Yorum Yapma -->
+<h2 style="font-size:22px; color:#222;">Leave a Comment</h2>
+
+<form id="commentForm" style="margin-bottom: 20px; text-align: center;">
+  <textarea id="commentInput" rows="3" placeholder="Write your comment here..." style="width: 90%; padding: 8px; font-size:14px;" required></textarea><br/>
+  <button type="submit" style="margin-top: 8px; padding: 8px 20px; font-size:14px; cursor:pointer;">Submit Comment</button>
+</form>
+
+<div id="commentsList" style="max-width: 90%; margin: 0 auto; text-align: left; color: #555; font-size: 13px;">
+  <h3>Your Comments:</h3>
+  <!-- Yorumlar buraya eklenecek -->
+</div>
+
+<script>
+  // Soru formu
+  const questionForm = document.getElementById('questionForm');
+  const questionInput = document.getElementById('questionInput');
+  const questionsList = document.getElementById('questionsList');
+
+  questionForm.addEventListener('submit', e => {
+    e.preventDefault();
+    const name = document.getElementById('qName').value.trim();
+    const email = document.getElementById('qEmail').value.trim();
+    const questionText = questionInput.value.trim();
+    if(name && email && questionText) {
+      const questionElem = document.createElement('div');
+      questionElem.style.padding = '8px 12px';
+      questionElem.style.borderBottom = '1px solid #ddd';
+      questionElem.style.marginBottom = '6px';
+      questionElem.innerHTML = `<strong>${name}</strong> asked:<br>${questionText}`;
+      questionsList.appendChild(questionElem);
+      questionForm.reset();
+    }
+  });
+
+  // Yorum formu
+  const commentForm = document.getElementById('commentForm');
+  const commentInput = document.getElementById('commentInput');
+  const commentsList = document.getElementById('commentsList');
+
+  commentForm.addEventListener('submit', e => {
+    e.preventDefault();
+    const commentText = commentInput.value.trim();
+    if(commentText) {
+      const commentElem = document.createElement('div');
+      commentElem.style.padding = '8px 12px';
+      commentElem.style.borderBottom = '1px solid #ddd';
+      commentElem.style.marginBottom = '6px';
+      commentElem.textContent = commentText;
+      commentsList.appendChild(commentElem);  // Yeni yorum en üstte
+      commentForm.reset();
+    }
+  });
+</script>
+<footer>
+  <div class="iletisim-bilgileri">
+    <h3>Style Of Turkish Men</h3>
+    <p>Adress:54 Sakarya University, Serdivan City, SAU 54000, TR</p>
+    <p>Phone: 0 (551) 018 73 27</p>
+  </div>
+  <div class="sosyal-medya">
+    <a href="#"><i class="fa-brands fa-facebook fa-beat"  style="font-size:20px;"></i></a>
+    <a href="#"><i class="fa-brands fa-twitter fa-beat"   style="font-size:20px;"></i></a>
+    <a href="https://www.instagram.com/hsynyyllmz/" target="_blank"><i class="fa-brands fa-instagram fa-beat" style="font-size:20px;"></i></a>
+  </div>
+  <div class="iletisim-bilgileri">
+    <p>© 2023 All Rights Reserved - Style Of Turkish Men</p>
+  </div>
+</footer>
+
+</body>
+</html>
