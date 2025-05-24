@@ -349,7 +349,6 @@ const products = [
 
 ];
 
-
 // Yıldızları oluşturan yardımcı fonksiyon
 function generateStars(rating) {
     let starsHtml = '';
@@ -371,6 +370,125 @@ function generateStars(rating) {
 
 // DOMContentLoaded olayı, HTML tamamen yüklendiğinde tetiklenir
 document.addEventListener('DOMContentLoaded', function() {
+
+
+
+    // Navbar'ı güncelleme fonksiyonu (Tüm sayfalarda çalışacak)
+    function updateNavbarForAuthStatus() {
+        // Register linkini bulmak için daha spesifik bir seçici kullanabiliriz
+        const registerLiElement = document.querySelector('nav ul li:last-child'); // Son li elementini varsaydım
+        if (registerLiElement) {
+            const authStatus = localStorage.getItem("giris");
+            const username = localStorage.getItem("username");
+
+            if (authStatus === "true") {
+                // Giriş yapıldıysa "My Account" olarak değiştir
+                // İç HTML'i tamamen değiştiriyoruz
+                registerLiElement.innerHTML = `
+                    <a href="my-account.html">My Account
+                        <i class="fa-solid fa-user" style="color:#cab726"></i>
+                    </a>`;
+                registerLiElement.title = `Hoş geldiniz, ${username || 'Kullanıcı'}!`;
+            } else {
+                // Giriş yapılmadıysa "Register" olarak kalsın
+                registerLiElement.innerHTML = `
+                    <a href="auth.html">Register
+                        <i class="fa-solid fa-user" style="color:#cab726"></i>
+                    </a>`;
+            }
+        }
+    }
+
+    // Sayfa yüklendiğinde navbar'ı güncelle
+    updateNavbarForAuthStatus();
+
+    // Sepete Ekle Bölümü (Tüm sayfalarda "sepeteEkle" butonu varsa çalışır)
+    document.addEventListener("click", function(e) {
+        const btn = e.target.closest(".sepeteEkle");
+        if (!btn) return;
+
+        e.preventDefault();
+        e.stopPropagation();
+
+        let girisYaptiMi = localStorage.getItem("giris");
+
+        if (girisYaptiMi === "true") {
+            alert("Sepete eklendi!");
+            // Sepet içeriğini buraya ekleyebilirsin
+        } else {
+            // Bootstrap Modalını göster
+            let loginModalElement = document.getElementById('loginModal');
+            if (!loginModalElement) {
+                // Eğer modal HTML'de yoksa, dinamik olarak oluştur
+                loginModalElement = document.createElement('div');
+                loginModalElement.id = 'loginModal';
+                loginModalElement.className = 'modal fade';
+                loginModalElement.setAttribute('tabindex', '-1');
+                loginModalElement.setAttribute('aria-labelledby', 'loginModalLabel');
+                loginModalElement.setAttribute('aria-hidden', 'true');
+                loginModalElement.innerHTML = `
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="loginModalLabel">Giriş Yap / Kaydol</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Bu işlemi yapabilmek için lütfen giriş yapın veya kaydolun.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                                <button type="button" class="btn btn-primary" id="modalRedirectBtn">Giriş Yap / Kaydol</button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                document.body.appendChild(loginModalElement);
+            }
+
+            let modal = new bootstrap.Modal(loginModalElement);
+            modal.show();
+
+            // Modal açıldıktan sonra yönlendirme butonuna olay dinleyici ekle
+            const modalRedirectBtn = document.getElementById("modalRedirectBtn");
+            if (modalRedirectBtn) {
+                modalRedirectBtn.onclick = () => {
+                    window.location.href = "auth.html"; // Yeni auth.html dosyasına yönlendir
+                };
+            }
+        }
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     // product-detail.html için kod
     const productDetailContainer = document.getElementById('product-detail');
@@ -504,7 +622,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                             <div class="d-flex align-items-center">
                                                 <span class="display-6 fw-bold" style="color:black;">${product.price}</span>
                                             </div>
-                                            <button class="sepeteEkle btn w-100 mt-auto" style="background-color:#cab796; color:black;>
+                                            <button class="sepeteEkle btn w-100 mt-auto" style="background-color:#cab796; color:black;">
                                                 <i class="fa-solid fa-cart-shopping me-2"></i>Add to Cart
                                             </button>
                                         </div>
