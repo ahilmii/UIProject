@@ -25,7 +25,7 @@ const products = [
             title: "Navy Blue Regular Fit Short Sleeve Striped Men's Shirt",
             brand: "SOTM Vision",
             price: "999,99 TL",
-            category: "Trousers",
+            category: "Upper Wear",
             color:"4 Color",
             image1: "assets/originalHuseyin2.png",
             image2: "assets/originalHuseyin3.png",
