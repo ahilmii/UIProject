@@ -14,7 +14,7 @@ nav{
   
     width: 100%;
     padding: 12px 0;
-    background: #222;
+    background: #1A1A1A ;
     box-shadow: -3px -3px 7px #c5b69c,
                  3px 3px 5px #cab796;
 }
@@ -76,7 +76,7 @@ nav .menu{
    
 }
 .menu ul a:hover{
-  background-color: #b99962;
+  background-color: #C2A763 ;
   color: white;
   box-shadow: 0 8px 20px #cab796;
   transform: translateY(-2px);
@@ -223,17 +223,17 @@ nav label.cancel{
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  padding: 10px;
-  background-color: #cab796;
+  padding: 7px;
+  background-color: #F3EFEA;
   flex-wrap: wrap;
 }
 
 .info-box {
-  background: #222;
+  background: #292929;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   padding: 20px;
-  width: 220px;
+  width: 250px;
   text-align: center;
   margin: 10px;
   transition: transform 0.3s ease;
@@ -242,27 +242,48 @@ nav label.cancel{
 
 
 .info-box img {
-  width: 70px;
-  height: 70px;
+  width: 90px;
+  height: 90px;
   margin-bottom: 15px;
 }
 
 .info-box h3 {
   font-size: 18px;
   margin-bottom: 10px;
-  color: #e0c28e;
+  color: #D6B06C;
 }
 
 .info-box p {
   font-size: 14px;
-  color: #cab796;
+  color: #B0B0B0;
+}
+/* scroll to top */
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  
+  padding: 10px 15px;
+  font-size: 20px;
+  background-color: #5a6ac7ea;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: none; /* başta görünmesin */
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
 }
 
+#scrollToTopBtn:hover {
+  background-color: #444;
+}
 /*        footer       */
 
 
 footer {
-  background-color: #000000; /* Açık gri bir arka plan */
+  background-color: #1A1A1A; /* Açık gri bir arka plan */
   padding: 20px;
   text-align: center; /* Metni ortala */
   font-size: 0.9em; /* Daha küçük bir yazı boyutu */

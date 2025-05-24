@@ -10,7 +10,9 @@
      <title>KOD ADI GONYALI HİLMİ</title>
     
     <style>
-      
+        body{
+          background-color: #f9f9f9;
+        }
         /* Hover efekti için geçiş animasyonu */
         .transition-card {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -169,8 +171,51 @@
     <p>Enjoy free shipping on your first order</p>
   </div>
 </section>
+
+
+
+<!--scroll to top-->
+<button id="scrollToTopBtn">↑</button>
+
+<script>
+  
+  const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+  
+  window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 300) {
+      scrollToTopBtn.style.display = "block";
+    } else {
+      scrollToTopBtn.style.display = "none";
+    }
+  });
+
+  
+  scrollToTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--  FeedBack button    -->
-<button id="commentButton" 
+<a href="feedback.html" id="commentButton" 
   style="
     position: fixed;
     bottom: 25px;
@@ -189,7 +234,7 @@
   onmouseover="this.style.backgroundColor='#0056b3'"
   onmouseout="this.style.backgroundColor='#007bff'">
   Ask Us
-</button>
+</a>
 
 <script>
   const btn = document.getElementById('commentButton');

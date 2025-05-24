@@ -88,6 +88,42 @@
     </section>
 
 
+
+
+    <a href="feedback.html" id="commentButton" 
+  style="
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+  "
+  onmouseover="this.style.backgroundColor='#0056b3'"
+  onmouseout="this.style.backgroundColor='#007bff'">
+  Ask Us
+</a>
+
+<script>
+  const btn = document.getElementById('commentButton');
+  btn.addEventListener('click', () => {
+    const commentSection = document.getElementById('commentInput');
+    if(commentSection){
+      commentSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      commentSection.focus();
+    }
+  });
+</script>
+
+
+
                 <!--         FOOTER              -->
         <footer>
 

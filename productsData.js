@@ -424,8 +424,8 @@ document.addEventListener('DOMContentLoaded', function() {
                                         <span class="display-6 fw-bold"  style="dcolor:#222;">${product.price}</span>
                                     </div>
                                     <hr style="width:100%; margin: 5px;">
-                                    <button class="sepeteEkle btn w-100 mt-3"  style="background-color:#cab796; color:#222;">
-                                    <button class="sepeteEkle btn btn-primary w-100 mt-3">
+                                    <button class="sepeteEkle btn w-100 mt-3"  style="background-color:#D8C4A0 ; color:#222;">
+                                   
                                         <i class="fa-solid fa-cart-shopping me-2"></i>Add to Cart
                                     </button>
                                 </div>
