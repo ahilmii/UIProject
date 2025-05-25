@@ -69,16 +69,8 @@ Clean, intuitive login/registration interface. Designed for familiarity and ease
 
 ## 🤝 Team
 
-Ahmet Hilmi Güler
-Hüseyin Yılmaz
-Muhammet Ali damgacı
-
----
+Ahmet Hilmi Güler b231202013
+Hüseyin Yılmaz b231202023
+Muhammet Ali damgacı b231202011
 
 
-
-## 📬 Contact
-
-If you'd like to contribute or provide feedback, feel free to contact us via the feedback form on the website.
-
----
