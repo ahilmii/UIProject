@@ -1,26 +1,26 @@
-/* sepete ekle bölümü */
-document.addEventListener("click", function(e) {
+// /* sepete ekle bölümü */
+// document.addEventListener("click", function(e) {
   
-  const btn = e.target.closest(".sepeteEkle");
-  if (!btn) return;
+//   const btn = e.target.closest(".sepeteEkle");
+//   if (!btn) return;
 
-  e.preventDefault();
-  e.stopPropagation();
+//   e.preventDefault();
+//   e.stopPropagation();
 
-  let girisYaptiMi = localStorage.getItem("giris");
+//   let girisYaptiMi = localStorage.getItem("giris");
   
-  if (girisYaptiMi === "true") {
-    alert("Sepete eklendi!");
-  } else {
+//   if (girisYaptiMi === "true") {
+//     alert("Sepete eklendi!");
+//   } else {
 
-    let modal = new bootstrap.Modal(document.getElementById('loginModal'));
-    modal.show();
+//     let modal = new bootstrap.Modal(document.getElementById('loginModal'));
+//     modal.show();
     
-    document.getElementById("modalRedirectBtn").onclick = () =>
-    window.location.href = "register.html";
-  }
+//     document.getElementById("modalRedirectBtn").onclick = () =>
+//     window.location.href = "register.html";
+//   }
 
-});
+// });
 
 
 

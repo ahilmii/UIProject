@@ -402,6 +402,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Sayfa yüklendiğinde navbar'ı güncelle
     updateNavbarForAuthStatus();
 
+
+
+
+    
     // Sepete Ekle Bölümü (Tüm sayfalarda "sepeteEkle" butonu varsa çalışır)
     document.addEventListener("click", function(e) {
         const btn = e.target.closest(".sepeteEkle");
@@ -414,6 +418,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (girisYaptiMi === "true") {
             alert("Sepete eklendi!");
+
+            const cart = JSON.parse(localStorage.getItem("cart")) || [];
+            const prodName = btn.dataset.name;
+            cart.push(prodName);
+            localStorage.setItem("cart", JSON.stringify(cart));
             // Sepet içeriğini buraya ekleyebilirsin
         } else {
             // Bootstrap Modalını göster
@@ -458,33 +467,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -542,7 +524,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                         <span class="display-6 fw-bold"  style="dcolor:#222;">${product.price}</span>
                                     </div>
                                     <hr style="width:100%; margin: 5px;">
-                                    <button class="sepeteEkle btn w-100 mt-3"  style="background-color:#D8C4A0 ; color:#222;">
+                                    <button class="sepeteEkle btn w-100 mt-3"  style="background-color:#D8C4A0 ; color:#222;" data-name="${product.name}">
                                    
                                         <i class="fa-solid fa-cart-shopping me-2"></i>Add to Cart
                                     </button>
@@ -622,7 +604,8 @@ document.addEventListener('DOMContentLoaded', function() {
                                             <div class="d-flex align-items-center">
                                                 <span class="display-6 fw-bold" style="color:black;">${product.price}</span>
                                             </div>
-                                            <button class="sepeteEkle btn w-100 mt-auto" style="background-color:#cab796; color:black;">
+                                            <button class="sepeteEkle btn w-100 mt-auto" style="background-color:#cab796; color:black;" data-name="${product.name}">
+                                                
                                                 <i class="fa-solid fa-cart-shopping me-2"></i>Add to Cart
                                             </button>
                                         </div>
