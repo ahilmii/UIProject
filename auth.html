@@ -446,7 +446,7 @@
                     if (username && email && password) {
                         localStorage.setItem("registeredUsername", username);
                         localStorage.setItem("registeredPassword", password);
-                        localStorage.setItem("giris", "true"); // Kayıt sonrası otomatik giriş yap
+                        localStorage.setItem("giris", "true"); 
                         localStorage.setItem("username", username); // Giriş yapan kullanıcı adını sakla
 
                         alert("Kayıt başarılı! Otomatik olarak giriş yapıldı.");
@@ -486,15 +486,6 @@
                 containerAuth.classList.remove('active');
             }
 
-            // Buradan sonraki aşağıdaki kodlar auth.html'de olmamalıydı, bu yüzden kaldırıldı.
-            // Bu kodlar my-account.html'de kalmalı.
-            /*
-            const authStatus = localStorage.getItem('giris');
-            if (authStatus !== 'true') {
-                alert('You must be logged in to access this page.');
-                window.location.href = 'auth.html';
-            }
-            */
         });
     </script>
 </body>

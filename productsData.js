@@ -151,25 +151,6 @@ const products = [
             ]
             
         },
-        {
-            name: "lacivert-polo-yaka-kisa-kollu-pike-erkek-tisort",
-            title : "Lacivert Polo Yaka Kısa Kollu Pike Erkek",
-            brand: "POLO",
-            price: "345,99 TL",
-            category: "Upper Wear",
-            color:"7 Color",
-            image1: "assets/lacivert-polo-yaka-kisa-kollu-pike-erkek-tisort1.webp",
-            image2: "assets/lacivert-polo-yaka-kisa-kollu-pike-erkek-tisort2.webp",
-            comments:"8",
-            seller: "HEALME",
-            reviews: [
-                { user: "user1", rating:4.5, text:"çok rahat çok profesyonel"},
-                { user: "user2", rating:4.5, text:"mankenin instası var mı"},
-                { user: "user3", rating:2.5, text:"Gömleği kağıttan mı yaptınız anlamadım, ütülerken yandı!!!!"},
-                { user: "user4", rating:3,   text:"30 derecede yıkama yapın, yoksa çekebilir"},
-            ]
-            
-        },
          {
             name: "beyaz-spor-ayakabi1",
             title : "White Laced Men's Sneakers",
@@ -306,15 +287,15 @@ const products = [
             ]
             
         },
-        {
-            name: "gri-rahat-pantalon1",
-            title : "Grey Casual Fit Men's Trousers",
+                {
+            name: "ekru (1)",
+            title : "Ecru Regular Fit Men's Trousers",
             brand: "SOTM Modern",
-            price: "199,99 TL",
+            price: "1079,99 TL",
             category: "Trousers",
             color: "8 Color",
-            image1: "assets/gri-rahat-pantalon1.webp",
-            image2: "assets/gri-rahat-pantalon1.webp",
+            image1: "assets/ekru (1).webp",
+            image2: "assets/ekru (2).webp",
             comments:"3",
             seller: "Dua Lipa",
             reviews: [  
@@ -325,31 +306,123 @@ const products = [
             ]
             
         },
-          {
-            name: "yesil-regular-fit-keten-erkek-gomlek1",
-            title : "Green Regular Fit Linen Blend Men's Shirt",
-            brand: "SOTM Classic",
-            price: "699,99 TL",
-            category: "Upper Wear",
-            category: "Upper Wear",
-            color:"4 Color",
-            image1: "./assets/yesil-regular-fit-keten-erkek-gomlek1.webp",
-            image2: "./assets/yesil-regular-fit-keten-erkek-gomlek2.webp",
-            comments:"4",
-            seller: "HEALME",
-            reviews: [
-                { user: "user1", rating:4.5, text:"çok rahat çok profesyonel"},
+                {
+            name: "ekru (1)",
+            title : "Ecru Regular Fit Men's Trousers",
+            brand: "SOTM Modern",
+            price: "1079,99 TL",
+            category: "Trousers",
+            color: "8 Color",
+            image1: "assets/ekru (1).webp",
+            image2: "assets/ekru (2).webp",
+            comments:"3",
+            seller: "Dua Lipa",
+            reviews: [  
                 { user: "user2", rating:4.5, text:"mankenin instası var mı"},
+                { user: "user1", rating:4.5, text:"çok rahat çok profesyonel"},
                 { user: "user3", rating:2.5, text:"Gömleği kağıttan mı yaptınız anlamadım, ütülerken yandı!!!!"},
-                { user: "user4", rating:3,   text:"30 derecede yıkama yapın, yoksa çekebilir"},
-                { user: "user5", rating:5,   text:"Gömleğin rengi ve bedeni tam istediğim gibi, güvenle alabilirsiniz :)"},
+                
             ]
             
         },
-
+                {
+            name: "ekru (1)",
+            title : "Ecru Regular Fit Men's Trousers",
+            brand: "SOTM Modern",
+            price: "1079,99 TL",
+            category: "Trousers",
+            color: "8 Color",
+            image1: "assets/ekru (1).webp",
+            image2: "assets/ekru (2).webp",
+            comments:"3",
+            seller: "Dua Lipa",
+            reviews: [  
+                { user: "user2", rating:4.5, text:"mankenin instası var mı"},
+                { user: "user1", rating:4.5, text:"çok rahat çok profesyonel"},
+                { user: "user3", rating:2.5, text:"Gömleği kağıttan mı yaptınız anlamadım, ütülerken yandı!!!!"},
+                
+            ]
+            
+        },
+                {
+            name: "ekru (1)",
+            title : "Ecru Regular Fit Men's Trousers",
+            brand: "SOTM Modern",
+            price: "1079,99 TL",
+            category: "Trousers",
+            color: "8 Color",
+            image1: "assets/ekru (1).webp",
+            image2: "assets/ekru (2).webp",
+            comments:"3",
+            seller: "Dua Lipa",
+            reviews: [  
+                { user: "user2", rating:4.5, text:"mankenin instası var mı"},
+                { user: "user1", rating:4.5, text:"çok rahat çok profesyonel"},
+                { user: "user3", rating:2.5, text:"Gömleği kağıttan mı yaptınız anlamadım, ütülerken yandı!!!!"},
+                
+            ]
+            
+        },
+                {
+            name: "ekru (1)",
+            title : "Ecru Regular Fit Men's Trousers",
+            brand: "SOTM Modern",
+            price: "1079,99 TL",
+            category: "Trousers",
+            color: "8 Color",
+            image1: "assets/ekru (1).webp",
+            image2: "assets/ekru (2).webp",
+            comments:"3",
+            seller: "Dua Lipa",
+            reviews: [  
+                { user: "user2", rating:4.5, text:"mankenin instası var mı"},
+                { user: "user1", rating:4.5, text:"çok rahat çok profesyonel"},
+                { user: "user3", rating:2.5, text:"Gömleği kağıttan mı yaptınız anlamadım, ütülerken yandı!!!!"},
+                
+            ]
+            
+        },
+                {
+            name: "ekru (1)",
+            title : "Ecru Regular Fit Men's Trousers",
+            brand: "SOTM Modern",
+            price: "1079,99 TL",
+            category: "Trousers",
+            color: "8 Color",
+            image1: "assets/ekru (1).webp",
+            image2: "assets/ekru (2).webp",
+            comments:"3",
+            seller: "Dua Lipa",
+            reviews: [  
+                { user: "user2", rating:4.5, text:"mankenin instası var mı"},
+                { user: "user1", rating:4.5, text:"çok rahat çok profesyonel"},
+                { user: "user3", rating:2.5, text:"Gömleği kağıttan mı yaptınız anlamadım, ütülerken yandı!!!!"},
+                
+            ]
+            
+        },
+                {
+            name: "ekru (1)",
+            title : "Ecru Regular Fit Men's Trousers",
+            brand: "SOTM Modern",
+            price: "1079,99 TL",
+            category: "Trousers",
+            color: "8 Color",
+            image1: "assets/ekru (1).webp",
+            image2: "assets/ekru (2).webp",
+            comments:"3",
+            seller: "Dua Lipa",
+            reviews: [  
+                { user: "user2", rating:4.5, text:"mankenin instası var mı"},
+                { user: "user1", rating:4.5, text:"çok rahat çok profesyonel"},
+                { user: "user3", rating:2.5, text:"Gömleği kağıttan mı yaptınız anlamadım, ütülerken yandı!!!!"},
+                
+            ]
+            
+        },
 ];
 
-// Yıldızları oluşturan yardımcı fonksiyon
+// Yıldızlar
 function generateStars(rating) {
     let starsHtml = '';
     const fullStars = Math.floor(rating);
@@ -376,7 +449,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Navbar'ı güncelleme fonksiyonu (Tüm sayfalarda çalışacak)
     function updateNavbarForAuthStatus() {
         // Register linkini bulmak için daha spesifik bir seçici kullanabiliriz
-        const registerLiElement = document.querySelector('nav ul li:last-child'); // Son li elementini varsaydım
+        const registerLiElement = document.querySelector('nav ul li:last-child'); // Son li elementini seçtik
         if (registerLiElement) {
             const authStatus = localStorage.getItem("giris");
             const username = localStorage.getItem("username");
@@ -427,33 +500,33 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             // Bootstrap Modalını göster
             let loginModalElement = document.getElementById('loginModal');
-            if (!loginModalElement) {
-                // Eğer modal HTML'de yoksa, dinamik olarak oluştur
-                loginModalElement = document.createElement('div');
-                loginModalElement.id = 'loginModal';
-                loginModalElement.className = 'modal fade';
-                loginModalElement.setAttribute('tabindex', '-1');
-                loginModalElement.setAttribute('aria-labelledby', 'loginModalLabel');
-                loginModalElement.setAttribute('aria-hidden', 'true');
-                loginModalElement.innerHTML = `
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="loginModalLabel">Giriş Yap / Kaydol</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                Bu işlemi yapabilmek için lütfen giriş yapın veya kaydolun.
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
-                                <button type="button" class="btn btn-primary" id="modalRedirectBtn">Giriş Yap / Kaydol</button>
-                            </div>
-                        </div>
-                    </div>
-                `;
-                document.body.appendChild(loginModalElement);
-            }
+            // if (!loginModalElement) {
+            //     // Eğer modal HTML'de yoksa, dinamik olarak oluştur
+            //     loginModalElement = document.createElement('div');
+            //     loginModalElement.id = 'loginModal';
+            //     loginModalElement.className = 'modal fade';
+            //     loginModalElement.setAttribute('tabindex', '-1');
+            //     loginModalElement.setAttribute('aria-labelledby', 'loginModalLabel');
+            //     loginModalElement.setAttribute('aria-hidden', 'true');
+            //     loginModalElement.innerHTML = `
+            //         <div class="modal-dialog">
+            //             <div class="modal-content">
+            //                 <div class="modal-header">
+            //                     <h5 class="modal-title" id="loginModalLabel">Giriş Yap / Kaydol</h5>
+            //                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            //                 </div>
+            //                 <div class="modal-body">
+            //                     Bu işlemi yapabilmek için lütfen giriş yapın veya kaydolun.
+            //                 </div>
+            //                 <div class="modal-footer">
+            //                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+            //                     <button type="button" class="btn btn-primary" id="modalRedirectBtn">Giriş Yap / Kaydol</button>
+            //                 </div>
+            //             </div>
+            //         </div>
+            //     `;
+            //     document.body.appendChild(loginModalElement);
+            // }
 
             let modal = new bootstrap.Modal(loginModalElement);
             modal.show();
@@ -510,10 +583,10 @@ document.addEventListener('DOMContentLoaded', function() {
                                         ${generateStars(product.reviews.reduce((acc, r) => acc + r.rating, 0) / product.reviews.length || 0)}
                                         <small class="">(${product.comments})</small>
                                         <div class="card-text mb-3">
-                                            <a href="" style="color: #222; text-decoration: underline;">
+                                            <p href="" style="color: #222;">
                                                 <span><i class="fa-solid fa-comment" style="color: #cab796;"></i></span>
                                                 Rate the Product
-                                            </a>
+                                            </p>
                                         </div>
                                         <div class="card-text mb-3">Seller : <span style="color:#428bca;">${product.seller}</span> (Return Period: 14 Days)</div>
                                     </div>
@@ -630,7 +703,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Highlight the active link in the navbar dropdown
             document.querySelectorAll('.Product-drowdown_menu a').forEach(link => {
                 if (link.dataset.category === categoryToHighlight) {
-                    link.classList.add('active-nav-link'); // Yeni bir CSS sınıfı ekleyebilirsin
+                    link.classList.add('active-nav-link'); 
                 } else {
                     link.classList.remove('active-nav-link');
                 }

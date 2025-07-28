@@ -51,13 +51,13 @@
     <div class="container my-5">
         <h1 class="text-center">My Account</h1>
 
-        <h2 class="text-center mt-5">Sepetiniz</h2>
+        <h2 class="text-center mt-5">Your Cart</h2>
         <div id="cart-container" class="row g-3 justify-content-center">
         <!-- Sepet ürünleri buraya JS ile eklenecek -->
         </div>
 
         <div class="text-center mt-4">
-            <button id="logoutBtn" class="btn btn-danger">Çıkış Yap</button>
+            <button id="logoutBtn" class="btn btn-danger">Log Out</button>
         </div>
 
     </div>
@@ -92,7 +92,7 @@
 
     if (cart.length === 0) {
         cartContainer.innerHTML = `
-        <p class="text-center text-muted col-12">Sepetinizde ürün yok.</p>
+        <p class="text-center text-muted col-12">You have no product in your cart.</p>
         `;
         return;
     }
